@@ -9,3 +9,11 @@
     justify-content: center;
     align-items: center; 
 }
+
+/* Category section */
+
+.category-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: row wrap;
+}
