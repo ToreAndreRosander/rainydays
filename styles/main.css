@@ -1,6 +1,13 @@
+body {
+background-color: black;
+    color: white;
+}
+
 .flex-container {
     display: flex;
     width: 100%;
+    flex-direction: column;
+    
 }
 
 .flex-child {
@@ -10,10 +17,26 @@
     align-items: center; 
 }
 
+.flex-child img {
+    width: 10%;
+    height: 10%;
+}
+
 /* Category section */
 
 .category-section {
     display: flex;
     flex-direction: row;
     flex-wrap: row wrap;
+    background: linear-gradient(
+    to bottom, 
+    rgba(64,64,64,0) 40%, 
+    rgba(64,64,64,0) 60%, 
+    rgba(0, 0, 0, 0.377) 80%, 
+    rgb(0, 0, 0) 100%
+),
+url(../images/pexels-nick-bondarev-4338015.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 5%;
 }
