@@ -1,42 +1,417 @@
+:root {
+    --bg-color: #161616;
+    --main-color: #377375;
+    --main-color-h:#2B4F50;
+
+    --text-color: #EEEEEE;
+    --link-color: #EEEEEE;
+    --link-color-h: #377375;
+
+    --white: #ffffff;
+}
+  
 body {
-background-color: black;
-    color: white;
+    background-color: #161616;
+    color: var(--text-color);
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 55px;
+    letter-spacing: 11px;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-color);
+    letter-spacing: 1.5px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color);
+    letter-spacing: 1.4px;
+}
+
+.text-shadow {
+    text-shadow: 1px 5px 8px #000000;
 }
 
 .flex-container {
     display: flex;
     width: 100%;
     flex-direction: column;
-    
 }
 
 .flex-child {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+    margin: auto;
+    text-align: center;
 }
 
 .flex-child img {
-    width: 10%;
-    height: 10%;
+    width: 80%;
+    height: 80%;
 }
+
+
+/* nav styling */
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    min-height: 80px;
+    padding: 2rem;
+}
+
+.nav-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--link-color);
+}
+
+.nav-text:hover {
+    color: var(--link-color-h);
+}
+
+
+.flex-child a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.flex-child a:hover {
+    color: var(--link-color-h);
+    text-decoration: none; 
+}
+
 
 /* Category section */
 
 .category-section {
     display: flex;
     flex-direction: row;
-    flex-wrap: row wrap;
+    flex-wrap: wrap;
+    min-height: 400px;
     background: linear-gradient(
     to bottom, 
     rgba(64,64,64,0) 40%, 
     rgba(64,64,64,0) 60%, 
     rgba(0, 0, 0, 0.377) 80%, 
     rgb(0, 0, 0) 100%
-),
-url(../images/pexels-nick-bondarev-4338015.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  padding: 5%;
+    ),
+    url(../images/pexels-nick-bondarev-4338015.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 5%;
+    justify-content: center;
 }
+
+.category-section div {
+    transition: transform .2s;
+}
+
+.category-section div:hover {
+    transform: scale(1.05); 
+    z-index: 2;
+    box-shadow: 2px 2px 18px #000000;
+}
+
+.category-card1 {
+    background: url(../images/man-4174727_640.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-width: 230px;
+    min-height: 280px;
+    margin: auto 0 -190px 0;
+}
+
+.material-icons.md-36 { 
+    font-size: 36px; 
+}
+
+.category-card2 {
+    background: url(../images/pexels-matt-hardy-2755165.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-width: 230px;
+    min-height: 280px;
+    margin: auto 0 -190px 0;
+}
+
+.category-card3 {
+    background: url(../images/umbrella-4507999_640.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-width: 230px;
+    min-height: 280px;
+    margin: auto 0 -190px 0;
+}
+
+.category-card4 {
+    background: url(../images/umbrella-4507999_640.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-width: 230px;
+    min-height: 280px;
+    margin: auto 0 -190px 0;
+}
+
+.category-bottom {
+    background-color: var(--main-color);
+    width: 100%;
+    bottom: 0%;
+    position: absolute;
+    text-align: center;
+    height: 20%;
+}
+
+.featured-section {
+    display: flex;
+    flex-direction: row;
+    min-height: 500px;
+    padding: 8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fs-child {
+    padding: 1rem;
+    margin: auto;
+}
+
+.cs-child {
+    padding: 1rem;
+    margin: auto;
+}
+
+.rs-child {
+    align-self: flex-start;
+    padding: 1rem;
+    margin: 0 auto 0 auto;;
+}
+
+.recomended-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 900px;
+    padding: 8rem;
+    background: linear-gradient(
+        to bottom, 
+        #161616 2%,
+        #18181879 20%, 
+        rgba(64,64,64,0) 40%, 
+        rgba(64,64,64,0) 60%, 
+        #18181879 80%, 
+        #161616 100%
+    ),
+    url(../images/will-swann-n4P5UGSYLEw-unsplash.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 0% 5% 0% 5%;
+}
+
+.recomended-sub-section {
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.header-title {
+    min-width: 100%;
+    padding: 2rem 2rem 0 2rem;
+    text-align: center;
+}
+
+.category-box {
+    display: flex;
+    flex-direction: column;
+    background: url(../images/farbakken-jacket-png.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-width: 300px; 
+    min-height: 400px;
+}
+
+.category-box-child {
+    padding: 2rem;
+}
+
+/* reusable product card */
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-color);
+    min-height: 400px;
+    min-width: 250px;
+    margin: 1rem;
+    transition: transform .2s;
+}
+
+.product-card-child {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+
+.product-card:hover {
+    transform: scale(1.1);
+}
+
+
+/* Buttons */
+
+.button {
+    background-color: var(--main-color);
+    min-height: 30px;
+    min-width: 80px;
+}
+
+.button-wide {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    min-width: 250px;
+    min-height: 50px;
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+.button-wide:hover {
+    background-color: var(--main-color-h);
+}
+
+
+/* Showcase section */
+
+.showcase-section {    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 720px;
+    padding: 8rem;
+    background: linear-gradient(
+        to bottom, 
+        rgba(64,64,64,0) 40%, 
+        rgba(64,64,64,0) 60%, 
+        rgba(0, 0, 0, 0.377) 80%, 
+        rgb(0, 0, 0) 100%
+    ),
+    url(../images/thom-holmes-57q4x4qTdbs-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 0% 5% 0% 5%;
+  
+}
+
+.ss-child {
+    align-self: flex-start;
+    padding: 1rem;
+    margin: 0 auto 0 auto;;
+}
+
+.ss-child-left {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 25%;
+}
+
+.ss-child-top {
+    position: absolute;
+    top: 5%;
+    left: 10%; 
+}
+
+.ss-child-bottom {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    text-align: center;
+}
+
+.ss-child-right {
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    width: 25%;
+    text-align: right;
+}
+
+
+
+/* Footer section */
+
+.footer-section {    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 400px;
+    
+    background-color: var(--bg-color);
+    width: 100%;
+}
+
+.footer-child {
+    align-self: flex-start;
+    padding: 1rem;
+    margin: 0 auto 0 auto;;
+}
+
+.footer-child-left {
+    margin: 0 auto;
+
+    width: 25%;
+}
+
+.footer-child-center {
+    margin: 0 auto;
+
+    width: 25%;
+}
+
+.footer-child-top {
+    width: 100%;
+    top: 5%;
+    left: 10%; 
+}
+
+.footer-child-bottom {
+
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-child-right {
+    margin: 0 auto;
+
+    width: 25%;
+    text-align: right;
+}
+
