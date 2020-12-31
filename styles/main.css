@@ -108,22 +108,23 @@ p {
     rgb(0, 0, 0) 100%
     ),
     url(../images/pexels-nick-bondarev-4338015.jpg);
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     padding: 5%;
     justify-content: center;
+    
 }
 
 .category-section div {
-    transition: transform .2s;
+    transition: transform .5s;
 }
 
 .category-section div:hover {
     transform: scale(1.05); 
     z-index: 2;
-    box-shadow: 2px 2px 18px #000000;
+    box-shadow: 2px 2px 18px #0000006b;
 }
 
 .category-card1 {
@@ -203,9 +204,10 @@ p {
 }
 
 .rs-child {
+    
     align-self: flex-start;
     padding: 1rem;
-    margin: 0 auto 0 auto;;
+    margin: 0 auto 0 auto;
 }
 
 .recomended-section {
@@ -236,6 +238,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
+    width: 30%;
 }
 
 .header-title {
