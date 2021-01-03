@@ -67,6 +67,7 @@ p {
     flex-direction: row;
     min-height: 70px;
     padding: 1rem;
+    background-color: black;
 }
 
 .nav-text {
@@ -274,6 +275,7 @@ p {
     min-height: 400px;
     min-width: 250px;
     margin: 1rem;
+    padding: 1rem;
     transition: transform .5s;
 }
 
@@ -288,6 +290,8 @@ p {
     transform: scale(1.05);
 
 }
+
+
 
 
 /* Buttons */
@@ -357,9 +361,7 @@ p {
 }
 
 .ss-child-bottom {
-    position: absolute;
-    bottom: 5%;
-    width: 100%;
+    margin: auto auto 0 auto;
     text-align: center;
 }
 
@@ -380,9 +382,9 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     min-height: 400px;
+    padding: 3rem 2rem;
+    background-color: black;
     
-    background-color: var(--bg-color);
-    width: 100%;
 }
 
 .footer-child {
@@ -393,14 +395,15 @@ p {
 
 .footer-child-left {
     margin: 0 auto;
-
-    width: 25%;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
 }
 
 .footer-child-center {
     margin: 0 auto;
 
-    width: 25%;
+    width: 33%;
 }
 
 .footer-child-top {
@@ -419,9 +422,41 @@ p {
 .footer-child-right {
     margin: 0 auto;
 
-    width: 25%;
+    width: 33%;
     text-align: right;
 }
+
+.footer-link {
+    color: var(--link-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.footer-link:hover {
+    color: var(--link-color-h);
+}
+
+
+/* Instagram column */
+
+.insta-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.insta-child {
+    padding: 3px;
+}
+
+.insta-child img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
 
 @media only screen and (max-width: 799px) {
 
