@@ -19,6 +19,7 @@
 body {
     background-color: #161616;
     color: var(--text-color);
+    margin: 0;
 }
 
 h1 {
@@ -34,6 +35,7 @@ h3 {
     font-weight: 400;
     color: var(--text-color);
     letter-spacing: 4px;
+    margin-block-start: 0.5rem;
 }
 
 p {
@@ -49,6 +51,7 @@ h2 {
     font-size: 38px;
     letter-spacing: 11px;
     font-weight: 300;
+    margin-block-start: 0.5rem;
 }
 
 /* Reusable text styling */ 
@@ -161,6 +164,11 @@ h2 {
     box-shadow: 2px 2px 18px #0000006b;
 }
 
+.category-card1:hover div {
+background-color: var(--main-color-h);
+
+}
+
 .material-icons.md-36 { 
     font-size: 36px; 
 }
@@ -183,6 +191,10 @@ h2 {
     box-shadow: 2px 2px 18px #0000006b;
 }
 
+.category-card2:hover div {
+    background-color: var(--main-color-h);
+}
+
 .category-card3 {
     background: url(../images/umbrella-4507999_640.png);
     background-position: bottom;
@@ -199,6 +211,10 @@ h2 {
     transform: scale(1.05); 
     z-index: 2;
     box-shadow: 2px 2px 18px #0000006b;
+}
+
+.category-card3:hover div {
+    background-color: var(--main-color-h);
 }
 
 .category-card4 {
@@ -219,18 +235,20 @@ h2 {
     box-shadow: 2px 2px 18px #0000006b;
 }
 
+.category-card4:hover div {
+    background-color: var(--main-color-h);
+}
+
 .category-bottom {
     background-color: var(--main-color);
     width: 100%;
     bottom: 0%;
     position: absolute;
     text-align: center;
-    height: 20%;
+    
 }
 
-.category-bottom:hover {
-    background-color: var(--main-color-h);
-}
+
 
 .cs-child {
     padding: 1rem;
@@ -274,34 +292,53 @@ h2 {
     flex-direction: row;
     flex-wrap: wrap;
     min-height: 600px;
-    padding: 8rem;
-    background: url(../images/will-swann-n4P5UGSYLEw-unsplash.png);
+    background: url(../images/will-swann-n4P5UGSYLEw-unsplash.png), rgb(0 0 0 / 42%);
+    background-blend-mode: multiply;
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    padding: 3rem;
+    padding-bottom: 2rem;
+
+}
+
+.recomended-sub-section-r {
+    margin: 0 auto 0 0;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.rs-child {
+    align-self: flex-start;
+    margin: 0 auto 0 auto;
 }
 
 .recomended-sub-section-l {
     margin: 0 0 0 auto;
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 40%;
+    text-align: right;
+    transition: background-color 1s linear; 
+
 }
-.recomended-sub-section-r {
-    margin: 0 auto 0 0;
+
+.rs-child-btns {
     display: flex;
-    flex-direction: column;
-    width: 30%;
-}
-
-.rs-child {
-    align-self: flex-start;
+    flex-wrap: wrap;
+    margin: 2rem auto;
     
-    margin: 0 auto 0 auto;
 }
 
+.rs-product-hover {
+    transition: background-color 1s linear; 
+    margin: auto;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
 
 
 /* Header for several of the frontpage sections */
@@ -311,6 +348,8 @@ h2 {
     padding: 3rem;
     text-align: center;
 }
+
+
 /* reusable product card */
 
 .product-card-container {
@@ -342,28 +381,59 @@ h2 {
     transform-style: preserve-3d;
 }
 
-.product-card-child img:hover {
-    transition: 0.9s;
-    transform: rotateY(20deg);
-}
-
 .product-card:hover {
     transform: scale(1.05);
 }
 
-
+.product-card:hover img {
+    transition: 0.9s;
+    transform: rotateY(15deg);
+}
 
 
 /* Buttons */
 
 .button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    min-width: 150px;
+    min-height: 60px;
     background-color: var(--main-color);
-    min-height: 30px;
-    min-width: 80px;
+    color: var(--text-color);
+    margin: 1rem;
     cursor: pointer;
+    border: 0;
+    text-shadow: 1px 1px 5px black;
+}
+
+.button:hover {
+    background-color: var(--main-color-h);
+    box-shadow: 2px 2px 5px black;
 }
 
 .button-wide {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    min-width: 250px;
+    min-height: 50px;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    margin: 1rem;
+    cursor: pointer;
+    border: 0;
+    text-shadow: 1px 1px 5px black;
+}
+
+.button-wide:hover {
+    background-color: var(--main-color-h);
+    box-shadow: 2px 2px 5px black;
+}
+
+/* orange cta button */
+
+.button-wide-cta {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -377,7 +447,7 @@ h2 {
     text-shadow: 1px 1px 5px black;
 }
 
-.button-wide:hover {
+.button-wide-cta:hover {
     background-color: var(--extra-color-1-h);
     box-shadow: 2px 2px 5px black;
 }
@@ -410,12 +480,11 @@ h2 {
     width: 43%;
     display: flex;
     flex-direction: column;
-    /* justify-content: flex-end; */
     align-items: flex-start;
 }
 
 .ss-child-top {
-    padding: 3rem;
+    
     width: 100%;
 }
 
@@ -431,18 +500,21 @@ h2 {
     text-align: right;
     display: flex;
     flex-direction: column;
-    /* justify-content: flex-end; */
     align-items: flex-end;
 }
 
 .ss-collector {
     display: flex;
     flex-direction: row;
-    
     align-items: center;
 }
 
-
+.ss-icon-right {
+    display: inline;
+}
+.ss-icon-left {
+    display: none;
+}
 
 /* Footer section */
 
@@ -453,7 +525,6 @@ h2 {
     min-height: 400px;
     padding: 10rem 3rem 1rem 3rem;
     background-color: black;
-    
 }
 
 .footer-child {
@@ -473,7 +544,7 @@ h2 {
 .footer-child-center {
     margin: 0 auto;
     padding: 1rem;
-    width: 30%;
+    max-width: 400px;
 }
 
 .footer-child-top {
@@ -530,7 +601,15 @@ h2 {
 
 /* css for smaller screens */
 
+@media only screen and (max-width: 1352px) {
 
+        .footer-child-right { 
+            width: 90%;
+    padding: 3rem;
+    text-align: left;
+    }
+
+}
 @media only screen and (max-width: 999px) {
 
     /* Make the recomended columns use more space on smaller screens */
@@ -540,6 +619,19 @@ h2 {
     }
     .recomended-sub-section-l {
         width: 50%;
+    }
+
+    /* Footer responsivnes */
+
+    .footer-child-left {
+        min-width: 400px;
+    }
+    .footer-child-right {
+        max-width: 400px;
+        text-align: left;
+    }
+    .footer-child-center {
+        max-width: 400px;
     }
 }
 
@@ -558,4 +650,62 @@ h2 {
     .featured-section-selected {
         margin-top: 300px;
     }
+
+    /* change showcase section to fit mobile devices */
+
+    .showcase-section {
+        background: linear-gradient( to bottom, rgba(64,64,64,0) 0%, rgba(64, 64, 64, 0.123) 20%, rgba(0, 0, 0, 0.527) 40%, rgb(0, 0, 0) 100% ),
+        url(../images/kamyab-lotfollahyan-duGd5L-okrY-unsplash.jpg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-direction: column;
+    }
+    .ss-child-top {
+        padding: 3rem 3rem 2rem 3rem;
+    }
+    .ss-child-top h1 {
+        background-color: black;
+    }
+
+    .ss-child-right {
+        padding: 3rem;
+        text-align: left;
+        width: 80%;
+        align-items: flex-end;
+        backdrop-filter: blur(2px);
+    }
+
+    .ss-child-left {
+        padding: 3rem;
+        text-align: left;
+        width: 80%;
+        align-items: flex-start;
+        backdrop-filter: blur(2px);
+    }
+    .ss-icon-right {
+        display: none;
+    }
+    .ss-icon-left {
+        display: inline;
+    }
+
+    .ss-child-bottom {
+        margin: 0;
+        padding-top: 3rem;
+        backdrop-filter: blur(2px);
+    }
+
+        /* Footer responsivnes */
+
+        .footer-child-left {
+            width: 100%;
+        }
+        .footer-child-right {
+            width: 100%;
+            text-align: left;
+        }
+        .footer-child-center {
+            width: 100%;
+        }
 }
