@@ -564,7 +564,7 @@ background-color: var(--main-color-h);
     margin: 0 auto;
     padding: 1rem;
     width: 30%;
-    text-align: right;
+    text-align: left;
 }
 
 .footer-link {
