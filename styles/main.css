@@ -3,6 +3,12 @@
     --main-color: #377375;
     --main-color-h:#2B4F50;
 
+    --main-color-confirm: #63A46C;
+    --main-color-confirm-h: #3F7647;
+
+    --extra-color-1: #F59D05;
+    --extra-color-1-h: #b47200;
+
     --text-color: #EEEEEE;
     --link-color: #EEEEEE;
     --link-color-h: #377375;
@@ -25,9 +31,9 @@ h1 {
 h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
-    font-weight: 700;
+    font-weight: 400;
     color: var(--text-color);
-    letter-spacing: 1.5px;
+    letter-spacing: 4px;
 }
 
 p {
@@ -38,9 +44,20 @@ p {
     letter-spacing: 1.4px;
 }
 
-.text-shadow {
-    text-shadow: 1px 5px 8px #000000;
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    letter-spacing: 11px;
+    font-weight: 300;
 }
+
+/* Reusable text styling */ 
+
+.text-shadow {
+    text-shadow: -2px -1px 5px #000000;
+}
+
+/* Main container */
 
 .flex-container {
     display: flex;
@@ -48,19 +65,10 @@ p {
     flex-direction: column;
 }
 
-.flex-child {
-    width: 100%;
-    margin: auto;
-    text-align: center;
-}
-
-.flex-child img {
-    width: 50%;
-    height: 50%;
-}
 
 
-/* nav styling */
+
+/* nav section */
 
 .nav {
     display: flex;
@@ -68,6 +76,16 @@ p {
     min-height: 70px;
     padding: 1rem;
     background-color: black;
+}
+.nav-child {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.nav-child img {
+    width: 50%;
+    height: 50%;
 }
 
 .nav-text {
@@ -81,21 +99,23 @@ p {
     color: var(--link-color-h);
 }
 
-
-.flex-child a {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+.nav-child a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
     color: var(--link-color);
     text-decoration: none;
+    letter-spacing: 5px;
 }
 
-.flex-child a:hover {
+.nav-child a:hover {
     color: var(--link-color-h);
     text-decoration: none; 
+    font-weight: 700;
 }
 
 
-/* Category section */
+/* Category frontpage section */
 
 .category-section {
     display: flex;
@@ -116,17 +136,11 @@ p {
     position: relative;
     padding: 5%;
     justify-content: center;
-    
 }
 
 .category-section div {
-    transition: transform .5s;
-}
-
-.category-section div:hover {
-    transform: scale(1.05); 
-    z-index: 2;
-    box-shadow: 2px 2px 18px #0000006b;
+    
+    cursor: pointer;
 }
 
 .category-card1 {
@@ -138,6 +152,13 @@ p {
     min-width: 230px;
     min-height: 280px;
     margin: auto 1px -190px 0;
+    transition: transform .5s;
+}
+
+.category-card1:hover {
+    transform: scale(1.05); 
+    z-index: 2;
+    box-shadow: 2px 2px 18px #0000006b;
 }
 
 .material-icons.md-36 { 
@@ -153,6 +174,13 @@ p {
     min-width: 230px;
     min-height: 280px;
     margin: auto 1px -190px 0;
+    transition: transform .5s;
+}
+
+.category-card2:hover {
+    transform: scale(1.05); 
+    z-index: 2;
+    box-shadow: 2px 2px 18px #0000006b;
 }
 
 .category-card3 {
@@ -164,6 +192,13 @@ p {
     min-width: 230px;
     min-height: 280px;
     margin: auto 1px -190px 0;
+    transition: transform .5s;
+}
+
+.category-card3:hover {
+    transform: scale(1.05); 
+    z-index: 2;
+    box-shadow: 2px 2px 18px #0000006b;
 }
 
 .category-card4 {
@@ -175,6 +210,13 @@ p {
     min-width: 230px;
     min-height: 280px;
     margin: auto 0 -190px 0;
+    transition: transform .5s;
+}
+
+.category-card4:hover {
+    transform: scale(1.05); 
+    z-index: 2;
+    box-shadow: 2px 2px 18px #0000006b;
 }
 
 .category-bottom {
@@ -186,30 +228,8 @@ p {
     height: 20%;
 }
 
-.featured-section-selected {
-    display: flex;
-    flex-direction: row;
-    min-height: 500px;
-    padding: 3rem;
-    padding-bottom: 10rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 150px;
-}
-
-.featured-section-new {
-    display: flex;
-    flex-direction: row;
-    min-height: 500px;
-    padding: 8rem 3rem 8rem 3rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-bottom: 10rem;
-}
-
-.fs-child {
-    padding: 1rem;
-    margin: auto;
+.category-bottom:hover {
+    background-color: var(--main-color-h);
 }
 
 .cs-child {
@@ -217,12 +237,37 @@ p {
     margin: auto;
 }
 
-.rs-child {
-    
-    align-self: flex-start;
-    padding: 1rem;
-    margin: 0 auto 0 auto;
+
+
+/* Featured frontpage section */
+
+.featured-section-selected {
+    display: flex;
+    flex-direction: row;
+    min-height: 500px;
+    padding: 3rem;
+    padding-bottom: 12rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 200px;
 }
+
+.featured-section-new {
+    display: flex;
+    flex-direction: row;
+    min-height: 500px;
+    padding: 8rem 3rem 12rem 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fs-child {
+    padding: 1rem;
+    margin: auto;
+}
+
+
+/* Recomended frontpage section */
 
 .recomended-section {
     display: flex;
@@ -238,49 +283,39 @@ p {
     padding: 0% 5% 0% 5%;
 }
 
-
 .recomended-sub-section-l {
     margin: 0 0 0 auto;
     display: flex;
     flex-direction: column;
-
     width: 30%;
 }
 .recomended-sub-section-r {
     margin: 0 auto 0 0;
     display: flex;
     flex-direction: column;
-
     width: 30%;
 }
 
+.rs-child {
+    align-self: flex-start;
+    padding: 1rem;
+    margin: 0 auto 0 auto;
+}
+
+
+
+/* Header for several of the frontpage sections */
 
 .header-title {
     min-width: 100%;
-    padding: 2rem;
+    padding: 3rem;
     text-align: center;
 }
-
-.category-box {
-    display: flex;
-    flex-direction: column;
-    background: url(../images/farbakken-jacket-png.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    min-width: 300px; 
-    min-height: 400px;
-}
-
-.category-box-child {
-    padding: 2rem;
-}
-
 /* reusable product card */
 
 .product-card-container {
     display: flex;
     flex-direction: row;
-    
 }
 
 .product-card {
@@ -292,6 +327,7 @@ p {
     margin: 1rem;
     padding: 1rem;
     transition: transform .5s;
+    cursor: pointer;
 }
 
 .product-card-child {
@@ -303,7 +339,6 @@ p {
 
 .product-card:hover {
     transform: scale(1.05);
-
 }
 
 
@@ -315,6 +350,7 @@ p {
     background-color: var(--main-color);
     min-height: 30px;
     min-width: 80px;
+    cursor: pointer;
 }
 
 .button-wide {
@@ -323,12 +359,17 @@ p {
     font-weight: 700;
     min-width: 250px;
     min-height: 50px;
-    background-color: var(--main-color);
+    background-color: var(--extra-color-1);
     color: var(--text-color);
+    margin: 1rem;
+    cursor: pointer;
+    border: 0;
+    text-shadow: 1px 1px 5px black;
 }
 
 .button-wide:hover {
-    background-color: var(--main-color-h);
+    background-color: var(--extra-color-1-h);
+    box-shadow: 2px 2px 5px black;
 }
 
 
@@ -397,7 +438,7 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     min-height: 400px;
-    padding: 3rem 2rem;
+    padding: 10rem 3rem 1rem 3rem;
     background-color: black;
     
 }
@@ -412,13 +453,14 @@ p {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    width: 33%;
+    width: 30%;
+    padding: 1rem;
 }
 
 .footer-child-center {
     margin: 0 auto;
-
-    width: 33%;
+    padding: 1rem;
+    width: 30%;
 }
 
 .footer-child-top {
@@ -436,8 +478,8 @@ p {
 
 .footer-child-right {
     margin: 0 auto;
-
-    width: 33%;
+    padding: 1rem;
+    width: 30%;
     text-align: right;
 }
 
@@ -464,6 +506,7 @@ p {
 
 .insta-child {
     padding: 3px;
+    cursor: pointer;
 }
 
 .insta-child img{
@@ -476,6 +519,9 @@ p {
 
 
 @media only screen and (max-width: 999px) {
+
+    /* Make the recomended columns use more space on smaller screens */
+
     .recomended-sub-section-r {
         width: 50%;
     }
@@ -485,6 +531,8 @@ p {
 }
 
 @media only screen and (max-width: 799px) {
+
+    /* Makes the category cards stack nicely ontop on eachother and add extra empty space for the following featured section.*/
 
     .category-card3 {
         margin: auto 0 -330px 0;
