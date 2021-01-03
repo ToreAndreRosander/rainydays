@@ -19,6 +19,7 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 55px;
     letter-spacing: 11px;
+    font-weight: 300;
 }
 
 h3 {
@@ -54,8 +55,8 @@ p {
 }
 
 .flex-child img {
-    width: 80%;
-    height: 80%;
+    width: 50%;
+    height: 50%;
 }
 
 
@@ -64,8 +65,8 @@ p {
 .nav {
     display: flex;
     flex-direction: row;
-    min-height: 80px;
-    padding: 2rem;
+    min-height: 70px;
+    padding: 1rem;
 }
 
 .nav-text {
@@ -226,18 +227,9 @@ p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    min-height: 900px;
+    min-height: 600px;
     padding: 8rem;
-    background: linear-gradient(
-        to bottom, 
-        #161616 2%,
-        #18181879 20%, 
-        rgba(64,64,64,0) 40%, 
-        rgba(64,64,64,0) 60%, 
-        #18181879 80%, 
-        #161616 100%
-    ),
-    url(../images/will-swann-n4P5UGSYLEw-unsplash.png);
+    background: url(../images/will-swann-n4P5UGSYLEw-unsplash.png);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -255,7 +247,7 @@ p {
 
 .header-title {
     min-width: 100%;
-    padding: 2rem 2rem 0 2rem;
+    padding: 2rem;
     text-align: center;
 }
 
