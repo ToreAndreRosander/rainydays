@@ -29,6 +29,14 @@ h1 {
     font-weight: 300;
 }
 
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 38px;
+    letter-spacing: 11px;
+    font-weight: 300;
+    margin-block-start: 0.5rem;
+}
+
 h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
@@ -46,30 +54,20 @@ p {
     letter-spacing: 1.6px;
 }
 
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 38px;
-    letter-spacing: 11px;
-    font-weight: 300;
-    margin-block-start: 0.5rem;
-}
+/* Re-usable text styling */ 
 
-/* Reusable text styling */ 
-
+/* Adds contrast to light colored text */
 .text-shadow {
     text-shadow: -2px -1px 5px #000000;
 }
 
-/* Main container */
+/* Main flex container */
 
 .flex-container {
     display: flex;
     width: 100%;
     flex-direction: column;
 }
-
-
-
 
 /* nav section */
 
@@ -80,26 +78,17 @@ h2 {
     padding: 1rem;
     background-color: black;
 }
+
 .nav-child {
     width: 100%;
     margin: auto;
     text-align: center;
 }
 
+/* header logo */
 .nav-child img {
     width: 50%;
     height: 50%;
-}
-
-.nav-text {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    color: var(--link-color);
-}
-
-.nav-text:hover {
-    color: var(--link-color-h);
 }
 
 .nav-child a {
@@ -117,8 +106,7 @@ h2 {
     font-weight: 700;
 }
 
-
-/* Category frontpage section */
+/* Frontpage category section */
 
 .category-section {
     display: flex;
@@ -136,13 +124,11 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
     padding: 5%;
     justify-content: center;
 }
 
 .category-section div {
-    
     cursor: pointer;
 }
 
@@ -165,8 +151,7 @@ h2 {
 }
 
 .category-card1:hover div {
-background-color: var(--main-color-h);
-
+    background-color: var(--main-color-h);
 }
 
 .material-icons.md-36 { 
@@ -245,17 +230,12 @@ background-color: var(--main-color-h);
     bottom: 0%;
     position: absolute;
     text-align: center;
-    
 }
-
-
 
 .cs-child {
     padding: 1rem;
     margin: auto;
 }
-
-
 
 /* Featured frontpage section */
 
@@ -278,7 +258,6 @@ background-color: var(--main-color-h);
         rgb(22, 22, 22) 99%
     ), url(../images/toomas-tartes-Yizrl9N_eDA-unsplash1.jpg), rgb(0 0 0 / 55%);
     background-blend-mode: multiply;
-
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -291,7 +270,6 @@ background-color: var(--main-color-h);
     padding: 8rem 3rem 12rem 3rem;
     flex-wrap: wrap;
     justify-content: center;
-    
     background: linear-gradient(
         to bottom, 
         rgb(0, 0, 0, 85% ) 0%, 
@@ -300,7 +278,8 @@ background-color: var(--main-color-h);
         rgba(0, 0, 0, 0.609) 60%, 
         rgba(0, 0, 0, 0.878) 70%, 
         rgb(0, 0, 0) 100%
-    ), url(../images/toomas-tartes-Yizrl9N_eDA-unsplash1.jpg), rgb(0 0 0 / 62%);
+    ), 
+    url(../images/toomas-tartes-Yizrl9N_eDA-unsplash1.jpg), rgb(0 0 0 / 62%);
     background-blend-mode: multiply;
     backdrop-filter: grayscale(100%);
     background-position: top;
@@ -312,7 +291,6 @@ background-color: var(--main-color-h);
     padding: 1rem;
     margin: auto;
 }
-
 
 /* Recomended frontpage section */
 
@@ -327,14 +305,12 @@ background-color: var(--main-color-h);
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 2rem;
-
 }
 
 .recomended-sub-section-r {
     margin: 0 auto 0 0;
     display: flex;
     flex-direction: column;
-  
 }
 
 .rs-child {
@@ -349,14 +325,12 @@ background-color: var(--main-color-h);
     width: 40%;
     text-align: right;
     transition: background-color 1s linear; 
-
 }
 
 .rs-child-btns {
     display: flex;
     flex-wrap: wrap;
     margin: 2rem auto;
-    
 }
 
 .rs-product-hover {
@@ -379,7 +353,7 @@ background-color: var(--main-color-h);
 }
 
 
-/* reusable product card */
+/* re-usable product card */
 
 .product-card-container {
     display: flex;
@@ -583,7 +557,6 @@ background-color: var(--main-color-h);
 }
 
 .footer-child-bottom {
-
     margin: auto;
     width: 100%;
     text-align: center;
@@ -614,7 +587,6 @@ background-color: var(--main-color-h);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
 }
 
 .insta-child {
@@ -632,10 +604,11 @@ background-color: var(--main-color-h);
 
 @media only screen and (max-width: 1352px) {
 
-        .footer-child-right { 
-            width: 90%;
-    padding: 3rem;
-    text-align: left;
+    /* Footer responsivnes */
+    .footer-child-right { 
+        width: 90%;
+        padding: 3rem;
+        text-align: left;
     }
 
 }
@@ -725,16 +698,18 @@ background-color: var(--main-color-h);
         backdrop-filter: blur(2px);
     }
 
-        /* Footer responsivnes */
+    /* Footer responsivnes */
 
-        .footer-child-left {
-            width: 100%;
-        }
-        .footer-child-right {
-            width: 100%;
-            text-align: left;
-        }
-        .footer-child-center {
-            width: 100%;
-        }
+    .footer-child-left {
+        width: 100%;
+    }
+
+    .footer-child-right {
+        width: 100%;
+        text-align: left;
+    }
+
+    .footer-child-center {
+        width: 100%;
+    }
 }
