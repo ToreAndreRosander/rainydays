@@ -335,13 +335,10 @@ p {
 }
 
 .rs-product-hover {
-  
-
     padding: 0 4rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
-
 }
 
 
@@ -761,4 +758,85 @@ p {
     margin: 0;
     text-align: center;
 }
+}
+
+
+
+.plist-hero-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 400px;
+    background: url(../images/pexels-vlad-bagacian-2819551.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+    justify-content: center;
+    width: 100%;
+}
+.plist-hero-sub {
+    padding: 2rem;
+    width: 100%;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+.plist-container {
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    width: 100%;;
+    justify-content: center;
+}
+
+.plist-left {
+    flex: 1;
+    margin: auto;
+}
+
+.plist-center {
+    flex: 3;
+    margin: auto;
+    padding: 3rem;
+}
+
+.plist-right {
+    flex: 1;
+    margin: auto;
+}
+
+/* re-usable product card detailed */
+.product-card-detailed {
+    background-color: #37737521;
+    color: black;
+    display: flex;
+    width: 100%;    
+}
+
+.product-card-detailed h3, p {
+color: black;
+}
+
+.pcd-left {
+    width: 25%;
+}
+
+
+.pcd-center {
+    width: 50%;
+}
+
+
+.pcd-rigth {
+    width: 25%;
+}
+
+.pcd-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
