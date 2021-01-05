@@ -20,7 +20,7 @@
 }
   
 body {
-    background-color: #161616;
+    background-color: #000000;
     color: var(--text-color);
     margin: 0;
 }
@@ -81,6 +81,11 @@ p {
     letter-spacing: 2px;
 }
 
+/* full width class */
+.full-width {
+    width: 100%;
+}
+
 /* Main flex container */
 
 .flex-container {
@@ -137,8 +142,8 @@ p {
     to bottom, 
     rgba(64,64,64,0) 40%, 
     rgba(64,64,64,0) 60%, 
-    rgba(0, 0, 0, 0.377) 80%, 
-    #161616 100%
+    rgba(0, 0, 0, 0.774) 80%, 
+    #000000 100%
     ),
     url(../images/pexels-nick-bondarev-4338015.jpg);
     background-position: center;
@@ -270,14 +275,14 @@ p {
     margin-top: 200px;
     background: linear-gradient(
         to bottom, 
-        rgb(22, 22, 22, 85%) 1%, 
+        rgb(0, 0, 0) 1%, 
         rgba(22,22,22, 0.842) 30%, 
         rgba(22,22,22, 0.605) 40%, 
         rgba(22,22,22, 0.609) 60%, 
         rgba(22,22,22, 0.878) 70%, 
-        rgb(22, 22, 22) 99%
-    ), url(../images/toomas-tartes-Yizrl9N_eDA-unsplash1.jpg), rgb(0 0 0 / 55%);
-    background-blend-mode: multiply;
+        rgb(0, 0, 0) 99%
+    ), url(../images/blake-cheek-unsplash.jpg), rgb(0, 0, 0);
+    
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -292,15 +297,15 @@ p {
     justify-content: center;
     background: linear-gradient(
         to bottom, 
-        rgb(0, 0, 0, 85% ) 0%, 
-        rgba(0, 0, 0, 0.842) 30%, 
-        rgba(0, 0, 0, 0.605) 40%, 
-        rgba(0, 0, 0, 0.609) 60%, 
+        rgb(0, 0, 0) 1%, 
+        rgb(0, 0, 0, 85%) 30%, 
+        rgb(0, 0, 0, 84%) 40%, 
+        rgba(0, 0, 0, 74%) 60%, 
         rgba(0, 0, 0, 0.878) 70%, 
         rgb(0, 0, 0) 100%
     ), 
-    url(../images/toomas-tartes-Yizrl9N_eDA-unsplash1.jpg), rgb(0 0 0 / 62%);
-    background-blend-mode: multiply;
+    url(../images/toomas-tartes-Yizrl9N_eDA-unsplash1.jpg), rgb(0, 0, 0);
+    
     backdrop-filter: grayscale(100%);
     background-position: top;
     background-repeat: no-repeat;
@@ -319,7 +324,7 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     min-height: 600px;
-    background: url(../images/will-swann-n4P5UGSYLEw-unsplash.png), rgb(0 0 0 / 42%);
+    background: url(../images/will-swann-n4P5UGSYLEw-unsplash.png), rgb(0 0 0 / 20%);
     background-blend-mode: multiply;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -336,6 +341,18 @@ p {
 .rs-child {
     align-self: flex-start;
     margin: 0 auto 0 auto;
+}
+
+.rs-child-l {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 0 auto 0 auto;
+    min-height: 200px;
+}
+
+.rs-child-l div {
+    padding: 0.5rem 0 0 2rem;
 }
 
 .recomended-sub-section-l {
