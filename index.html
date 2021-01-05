@@ -352,14 +352,20 @@
         <div class="ss-child-bottom text-shadow">
             <h2>In stores soon</h2>
             <p>Sign up to our newsletter to get stock notifications</p>
-            <button class="button-wide-cta">Sign up</button>
+            <button class="button-wide-cta" onclick="openNewsletter()">Sign up</button>
         </div>
+        
     </section>
 
     <section class="footer-section">
 
-        <div class="footer-child-left">
+        <div id="newsletter-signup" class="newsletter-signup" style="display:none;">
+            
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="E-mail">
+        </div>
 
+        <div class="footer-child-left">
             <h3>Usefull links</h3>
             <p>Highly durable waterproof membrane ensures breathable protection against any weather</p>
             
@@ -407,6 +413,8 @@
     </section>
 
 </div>
+
+<script src="js/newsletter.js">openNewsletter()</script>
 </body>
 
 </html>

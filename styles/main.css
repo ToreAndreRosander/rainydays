@@ -10,6 +10,9 @@
     --extra-color-1-h: #b47200;
 
     --text-color: #EEEEEE;
+    --text-color-light: #EEEEEE;
+    --text-color-dark: #292929;
+
     --link-color: #EEEEEE;
     --link-color-h: #377375;
 
@@ -61,6 +64,21 @@ p {
 /* Adds contrast to light colored text */
 .text-shadow {
     text-shadow: -2px -1px 5px #000000;
+}
+
+/* light text */
+.text-light {
+    color: var(--text-color-light);
+}
+
+/* dark text */
+.text-dark {
+    color: var(--text-color-dark);
+}
+
+/* narrow letter spacing*/
+.text-narrow {
+    letter-spacing: 2px;
 }
 
 /* Main flex container */
@@ -567,6 +585,39 @@ p {
     padding: 1rem;
     width: 30%;
     text-align: left;
+
+    
+}
+.newsletter-signup {
+    display: none;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.9s ease-out;
+    text-align: center;
+}
+
+.ns-toggle-on {
+    display: flex;
+    opacity: 1;
+}
+
+.ns-toggle-off {
+    
+    opacity: 0;
+    display: none;
+}
+
+.newsletter-signup input[type=text] {
+        background-color: var(--bg-color);
+        border: 2px solid var(--extra-color-1);
+        border-radius: 4px;
+        padding: 2rem;
+        margin: 2rem;
+        color: var(--text-color-light);
+        font-size: 22px;
+      
 }
 
 .footer-link {
@@ -706,6 +757,7 @@ p {
         backdrop-filter: blur(2px);
     }
 
+    
     /* Footer responsivnes */
 
     .footer-child-left {
@@ -800,7 +852,7 @@ p {
 }
 
 .plist-center {
-    flex: 3;
+    flex: 4;
     margin: auto;
     padding: 3rem;
 }
@@ -817,11 +869,9 @@ p {
     display: flex;
     width: 90%;    
     padding: 1rem 2rem;
+    margin: auto;
 }
 
-.product-card-detailed h3, p {
-    color: black;
-}
 
 .pcd-left {
     width: 25%;
@@ -836,6 +886,7 @@ p {
 .pcd-right {
     width: 15%;
     padding: 1rem;
+    text-align: center;
 }
 
 .pcd-bottom {
