@@ -676,7 +676,7 @@ p {
         /* Makes the category cards stack nicely ontop on eachother and add extra empty space for the following featured section.*/
 
         .category-card3 {
-            margin: auto 0 -330px 0;
+            margin: auto 1px -330px 0;
         }
     
         .category-card4 {
@@ -745,7 +745,7 @@ p {
     /* Makes the category cards stack nicely ontop on eachother and add extra empty space for the following featured section.*/
 
     .category-card3 {
-        margin: auto 0 -330px 0;
+        margin: auto 1px -330px 0;
     }
 
     .category-card4 {
