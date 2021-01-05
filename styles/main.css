@@ -330,18 +330,18 @@ p {
 .rs-child-btns {
     display: flex;
     flex-wrap: wrap;
-    margin: 2rem auto;
     justify-content: center;
+    width: 100%;
 }
 
 .rs-product-hover {
-    transition: background-color 1s linear; 
+  
 
     padding: 0 4rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border-radius: 10px;
+
 }
 
 
@@ -617,13 +617,19 @@ p {
 }
 @media only screen and (max-width: 999px) {
 
+    .header-title {
+        min-width: 80%;
+
+    }
+
     /* Make the recomended columns use more space on smaller screens */
 
     .recomended-sub-section-r {
         width: 50%;
     }
     .recomended-sub-section-l {
-        width: 50%;
+        width: 45%;
+        padding-left: 2rem;
     }
 
     /* Footer responsivnes */
@@ -715,4 +721,44 @@ p {
     .footer-child-center {
         width: 100%;
     }
+}
+
+@media only screen and (max-width: 679px) {
+
+    .product-card-container {
+
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header-title {
+        min-width: 50%;
+
+    }
+
+    /* make the recomended section look better on verry small devices */
+
+
+
+    .recomended-sub-section-l {
+        width: 80%;
+        
+        margin: auto;
+    }
+    .button {
+    max-height: 80px;
+}
+
+    .rs-child-btns {
+
+        margin: 2rem auto;
+        justify-content: center;
+        width: 40%;
+    
+    }
+.recomended-sub-section-r {
+    max-width: 50%;
+    margin: 0;
+    text-align: center;
+}
 }
