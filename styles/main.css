@@ -269,10 +269,9 @@ p {
     flex-direction: row;
     min-height: 500px;
     padding: 3rem;
-    padding-bottom: 12rem;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 200px;
+    margin: 15rem 0;
     background: linear-gradient(
         to bottom, 
         rgb(0, 0, 0) 1%, 
@@ -292,7 +291,7 @@ p {
     display: flex;
     flex-direction: row;
     min-height: 500px;
-    padding: 8rem 3rem 12rem 3rem;
+    margin: 10rem 0 15rem;
     flex-wrap: wrap;
     justify-content: center;
     background: linear-gradient(
@@ -306,7 +305,7 @@ p {
     ), 
     url(../images/toomas-tartes-Yizrl9N_eDA-unsplash1.jpg), rgb(0, 0, 0);
     
-    backdrop-filter: grayscale(100%);
+    
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
