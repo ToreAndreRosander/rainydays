@@ -1,0 +1,59 @@
+:root {
+    --bg-color: #161616;
+    --main-color: #377375;
+    --main-color-h:#2B4F50;
+
+    --main-color-confirm: #63A46C;
+    --main-color-confirm-h: #3F7647;
+
+    --extra-color-1: #377375;
+    --extra-color-1-h: #377375;
+
+    --text-color: #EEEEEE;
+    --text-color-light: #EEEEEE;
+    --text-color-dark: #292929;
+
+    --link-color: #EEEEEE;
+    --link-color-h: #377375;
+
+    --white: #ffffff;
+}
+
+.pupup-container {
+    display: flex;
+}
+
+.popup {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: opacity 0.9s;
+}
+
+.popup-content {
+  background-color: var(--bg-color);
+  margin: auto;
+  padding: 20px;
+  border: 1px solid var(--main-color);
+  width: 80%;
+  opacity: 0;
+  transition: opacity 0.9s;
+}
+
+.close-popup {
+  color: var(--main-color);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-popup:hover, .close-popup:focus {
+  color: var(--main-color-h);
+  text-decoration: none;
+  cursor: pointer;
+}
