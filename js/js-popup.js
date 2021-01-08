@@ -3,10 +3,12 @@ var closepopup = document.getElementsByClassName("close-popup")[0];
 var popupc = document.getElementById("popup-content");
 
 function js_popup() {
-  
+    var validation = validate_newsletter_input();
+    if(validation == "ok") { 
   popup.style.opacity = 1;
   popupc.style.opacity = 1;
   popup.style.display = "flex";
+
   closepopup.onclick = function() {
     popup.style.display = "none";
     openNewsletter();
@@ -18,4 +20,8 @@ function js_popup() {
       openNewsletter();
     }
   }
+}
+else {
+    console.log("ney");
+}
 }

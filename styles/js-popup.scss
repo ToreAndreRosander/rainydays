@@ -36,24 +36,24 @@
 }
 
 .popup-content {
-  background-color: var(--bg-color);
-  margin: auto;
-  padding: 20px;
-  border: 1px solid var(--main-color);
-  width: 80%;
-  opacity: 0;
-  transition: opacity 0.9s;
+    background-color: var(--bg-color);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid var(--main-color);
+    width: 80%;
+    opacity: 0;
+    transition: opacity 0.9s;
 }
 
 .close-popup {
-  color: var(--main-color);
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+    color: var(--main-color);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .close-popup:hover, .close-popup:focus {
-  color: var(--main-color-h);
-  text-decoration: none;
-  cursor: pointer;
+    color: var(--main-color-h);
+    text-decoration: none;
+    cursor: pointer;
 }
