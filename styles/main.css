@@ -13,21 +13,6 @@
   --link-color-h: #377375;
   --white: #ffffff; }
 
-:root {
-  --bg-color: #161616;
-  --main-color: #377375;
-  --main-color-h:#2B4F50;
-  --main-color-confirm: #63A46C;
-  --main-color-confirm-h: #3F7647;
-  --extra-color-1: #377375;
-  --extra-color-1-h: #377375;
-  --text-color: #EEEEEE;
-  --text-color-light: #EEEEEE;
-  --text-color-dark: #292929;
-  --link-color: #EEEEEE;
-  --link-color-h: #377375;
-  --white: #ffffff; }
-
 .pupup-container {
   display: flex; }
 
@@ -127,6 +112,14 @@ p {
 .full-width {
   width: 100%; }
 
+/* blur effect for image overlay */
+.blur {
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px); }
+
 /* Main flex container */
 .flex-container {
   display: flex;
@@ -145,6 +138,21 @@ p {
   width: 100%;
   margin: auto;
   text-align: center; }
+
+/* Side border for nav children on hover */
+.nav-border-r {
+  border-right: 0px solid var(--main-color);
+  transition: 0.1s ease; }
+
+.nav-border-r:hover {
+  border-right: 2px solid var(--main-color); }
+
+.nav-border-l {
+  border-left: 0px solid black;
+  transition: 0.1s ease; }
+
+.nav-border-l:hover {
+  border-left: 2px solid var(--main-color); }
 
 /* header logo */
 .nav-child img {

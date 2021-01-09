@@ -18,24 +18,24 @@ function openNewsletter() {
     var emailerror = document.getElementById("newsletter-email");
 
     if(name > 0 || name !== "" ){
-        nameres = "ok";
+        nameres = true;
         nameerror.style.borderColor = 'var(--main-color)';
     } else {
-        nameres = "Input not OK";
+        nameres = false;
         nameerror.style.borderColor = 'red';
     }
 
     if(email > 0 || email !== "" ){
-        emailres = "ok";
+        emailres = true;
         emailerror.style.borderColor = 'var(--main-color)';
       } else {
-        emailres = "Input not OK";
+        emailres = false;
         emailerror.style.borderColor = 'red';
       }
 
 
-    if(nameres === "ok" && emailres === "ok") {
-        return nameres, emailres;
+    if(nameres === true && emailres === true) {
+        return true;
     }
     else {
         return false;

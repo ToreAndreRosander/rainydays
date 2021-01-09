@@ -99,6 +99,15 @@ p {
     width: 100%;
 }
 
+/* blur effect for image overlay */
+.blur {
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);    
+}
+
 /* Main flex container */
 
 .flex-container {
@@ -121,6 +130,25 @@ p {
     width: 100%;
     margin: auto;
     text-align: center;
+}
+
+/* Side border for nav children on hover */
+.nav-border-r {
+    border-right: 0px solid var(--main-color);
+    transition:0.1s ease;
+}
+
+.nav-border-r:hover {
+    border-right: 2px solid var(--main-color);
+}
+
+.nav-border-l {
+    border-left: 0px solid  rgb(0, 0, 0);
+    transition:0.1s ease;
+}
+
+.nav-border-l:hover {
+    border-left: 2px solid var(--main-color);
 }
 
 /* header logo */
