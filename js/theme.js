@@ -7,13 +7,13 @@ if(theme == null) {
     setTheme(theme);
 }
 
-let themeDots = document.getElementsByClassName('theme-dot');
+let themeLinks = document.getElementsByClassName('theme-link');
 
-for (var i=0; themeDots.length > i; i++) {
-        themeDots[i].addEventListener('click', function(){
+for (var i=0; themeLinks.length > i; i++) {
+    themeLinks[i].addEventListener('click', function(){
         let mode = this.dataset.mode;
         setTheme(mode);
-        });
+    });
 }
 
 function setTheme(mode) {

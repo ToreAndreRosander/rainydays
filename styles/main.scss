@@ -1,6 +1,7 @@
 :root {
     --header-bg-color: #000000;
     --bg-color: #000000;
+
     --main-color: #377375;
     --main-color-h:#2B4F50;
 
@@ -23,9 +24,52 @@
     --link-color: #EEEEEE;
     --link-color-h: #377375;
 
+    --product-card-bg: #377375;
+    --product-card-bg-h: #2B4F50;
+
     --white: #ffffff;
+
+    // Background images for the different themes
+
+    --hero-bg: linear-gradient(
+        to bottom, 
+        rgba(64,64,64,0) 40%, 
+        rgba(64,64,64,0) 60%, 
+        rgba(0, 0, 0, 0.774) 80%,),
+        url(../images/pexels-nick-bondarev-4338015.jpg);
+
+    --hero-bg-position: center;
+
+    --featured-selected-bg: linear-gradient(
+        to bottom, 
+        rgb(0, 0, 0) 1%, 
+        rgba(22,22,22, 0.842) 30%, 
+        rgba(22,22,22, 0.605) 40%, 
+        rgba(22,22,22, 0.609) 60%, 
+        rgba(22,22,22, 0.878) 70%, 
+        rgb(0, 0, 0) 99%), 
+        url(../images/blake-cheek-unsplash.jpg), rgb(0, 0, 0);
+
+    --featured-new-bg: linear-gradient(to bottom, 
+        rgb(0, 0, 0) 1%, 
+        rgba(0, 0, 0, 0.849) 30%, 
+        rgba(0, 0, 0, 0.842) 40%, 
+        rgba(0, 0, 0, 0.747) 60%, 
+        rgba(0, 0, 0, 0.878) 70%, 
+        rgb(0, 0, 0) 100%), 
+        url(../images/toomas-tartes-Yizrl9N_eDA-unsplash1.jpg), rgb(0, 0, 0);
+
+    --recomended-bg: url(../images/will-swann-n4P5UGSYLEw-unsplash.png), rgba(0, 0, 0, 20%);
+
+    --showcase-bg: linear-gradient(
+        to bottom, 
+        rgba(64,64,64,0) 1%, 
+        rgba(64,64,64,0) 60%, 
+        rgba(0, 0, 0, 0.507) 70%, 
+        rgb(0, 0, 0) 100%),
+        url(../images/thom-holmes-57q4x4qTdbs-unsplash.jpg);
 }
-  
+
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -154,19 +198,13 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     min-height: 400px;
-    background: linear-gradient(
-    to bottom, 
-    rgba(64,64,64,0) 40%, 
-    rgba(64,64,64,0) 60%, 
-    rgba(0, 0, 0, 0.774) 80%, 
-    #000000 100%
-    ),
-    url(../images/pexels-nick-bondarev-4338015.jpg);
-    background-position: center;
+    background: var(--hero-bg);
+    background-position: var(--hero-bg-position);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5%;
     justify-content: center;
+    background-attachment: fixed;
 }
 
 .category-section div {
@@ -290,15 +328,7 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     margin: 15rem 0;
-    background: linear-gradient(
-        to bottom, 
-        rgb(0, 0, 0) 1%, 
-        rgba(22,22,22, 0.842) 30%, 
-        rgba(22,22,22, 0.605) 40%, 
-        rgba(22,22,22, 0.609) 60%, 
-        rgba(22,22,22, 0.878) 70%, 
-        rgb(0, 0, 0) 99%
-    ), url(../images/blake-cheek-unsplash.jpg), rgb(0, 0, 0);
+    background: var(--featured-selected-bg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -308,22 +338,14 @@ p {
     display: flex;
     flex-direction: row;
     min-height: 500px;
-    margin: 10rem 0 15rem;
+    padding: 10rem 0 15rem;
     flex-wrap: wrap;
     justify-content: center;
-    background: linear-gradient(
-        to bottom, 
-        rgb(0, 0, 0) 1%, 
-        rgba(0, 0, 0, 0.849) 30%, 
-        rgba(0, 0, 0, 0.842) 40%, 
-        rgba(0, 0, 0, 0.747) 60%, 
-        rgba(0, 0, 0, 0.878) 70%, 
-        rgb(0, 0, 0) 100%
-    ), 
-    url(../images/toomas-tartes-Yizrl9N_eDA-unsplash1.jpg), rgb(0, 0, 0);
+    background: var(--featured-new-bg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .fs-child {
@@ -338,7 +360,7 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     min-height: 600px;
-    background: url(../images/will-swann-n4P5UGSYLEw-unsplash.png), rgba(0, 0, 0, 20%);
+    background: var(--recomended-bg);
     
     background-position: bottom;
     background-repeat: no-repeat;
@@ -412,7 +434,7 @@ p {
 .product-card {
     display: flex;
     flex-direction: column;
-    background-color: var(--extra-color-2);
+    background-color: var(--product-card-bg);
     min-height: 400px;
     min-width: 250px;
     margin: 1rem;
@@ -512,14 +534,7 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     min-height: 720px;
-    background: linear-gradient(
-        to bottom, 
-        rgba(64,64,64,0) 1%, 
-        rgba(64,64,64,0) 60%, 
-        rgba(0, 0, 0, 0.507) 70%, 
-        rgb(0, 0, 0) 100%
-    ),
-    url(../images/thom-holmes-57q4x4qTdbs-unsplash.jpg);
+    background: var(--showcase-bg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -543,7 +558,7 @@ p {
 .ss-child-bottom {
     margin: auto auto 0 auto;
     text-align: center;
-    width: 100%;
+  
 }
 
 .ss-child-right {
@@ -576,7 +591,7 @@ p {
     flex-wrap: wrap;
     min-height: 400px;
     padding: 10rem 3rem 1rem 3rem;
-    background-color: black;
+    background-color: var(--header-bg-color);
 }
 
 .footer-child {
@@ -619,6 +634,11 @@ p {
 
     
 }
+
+.theme-link {
+    cursor: pointer;
+}
+
 .newsletter-signup {
     display: flex;
     justify-content: center;

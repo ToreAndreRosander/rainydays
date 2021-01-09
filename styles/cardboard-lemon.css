@@ -1,8 +1,8 @@
 :root {
-    --header-bg-color: #53E1F6;
-    --bg-color: rgb(79,74,81);
-    --main-color: #53E1F6;
-    --main-color-h:#3ea7b8;
+    --header-bg-color: #46344E;
+    --bg-color: #606060FF;
+    --main-color: #D6ED17FF;
+    --main-color-h:#3ed3c4;
 
     --main-color-confirm: #63A46C;
     --main-color-confirm-h: #3F7647;
@@ -10,14 +10,14 @@
     --main-color-cancel: #CE4A50;
     --main-color-cancel-h: #9F3B3F;
 
-    --extra-color-1: #F59D05;
-    --extra-color-1-h: #b47200;
+    --extra-color-1: #46344E;
+    --extra-color-1-h: #46344E;
 
-    --text-color: #EEEEEE;
+    --text-color: #D6ED17FF;
     --text-color-light: #EEEEEE;
     --text-color-dark: #292929;
 
-    --link-color: #EEEEEE;
+    --link-color: #D6ED17FF;
     --link-color-h: #FFA8B3;
     --product-card-bg: #ad073980;
     --product-card-bg-h: #ad0739c2;

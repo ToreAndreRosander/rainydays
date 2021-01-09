@@ -1,5 +1,5 @@
 :root {
-    --header-bg-color: #29000e;
+    --header-bg-color: black;
     --bg-color: #000000;
     --main-color: #ad0739;
     --main-color-h:#8b062e;
@@ -12,8 +12,8 @@
     --main-color-cancel: #CE4A50;
     --main-color-cancel-h: #9F3B3F;
 
-    --extra-color-1: #F59D05;
-    --extra-color-1-h: #b47200;
+    --extra-color-1: #ad0739;
+    --extra-color-1-h: #8b062e;
 
     --extra-color-2: #3b0a0b;
     --extra-color-2-h: #b47200;
@@ -23,7 +23,49 @@
     --text-color-dark: #292929;
 
     --link-color: #EEEEEE;
-    --link-color-h: #FFA8B3;
+    --link-color-h: #ad0739;
+
+    --product-card-bg: #ad073980;
+    --product-card-bg-h: #ad0739c2;
 
     --white: #ffffff;
+
+    --hero-bg: linear-gradient(
+        to bottom, 
+        rgba(64,64,64,0) 40%, 
+        rgba(0, 0, 0, 0.815) 60%, 
+        rgb(0, 0, 0) 80%, 
+        #000000 100%),
+        url(../images/themes/deep-cherry/luca-massimilian-NCFCbcNVSVQ-unsplash-m.jpg);
+    
+    --hero-bg-position: bottom;
+
+    --featured-selected-bg: linear-gradient(
+        to bottom, 
+        rgb(0, 0, 0) 1%, 
+        rgba(22,22,22, 0.842) 30%, 
+        rgba(22,22,22, 0.605) 40%, 
+        rgba(22,22,22, 0.609) 60%, 
+        rgba(22,22,22, 0.878) 70%, 
+        rgb(0, 0, 0) 99%), 
+        url(../images/blake-cheek-unsplash.jpg);
+
+    --featured-new-bg: linear-gradient(
+        to bottom, 
+        rgb(0, 0, 0) 1%, 
+        rgba(0, 0, 0, 0.849) 30%, 
+        rgba(0, 0, 0, 0.842) 40%, 
+        rgba(0, 0, 0, 0.747) 60%, 
+        rgba(0, 0, 0, 0.878) 70%, 
+        rgb(0, 0, 0) 100%), 
+        url(../images/toomas-tartes-Yizrl9N_eDA-unsplash1.jpg);
+
+    --recomended-bg: url(../images/will-swann-n4P5UGSYLEw-unsplash.png);
+
+    --showcase-bg: linear-gradient(
+        to bottom, 
+        rgba(64,64,64,0) 1%, 
+        rgba(64,64,64,0) 60%, 
+        rgba(0, 0, 0, 0.507) 70%, 
+        rgb(0, 0, 0) 100%), url(../images/thom-holmes-57q4x4qTdbs-unsplash.jpg);
 }

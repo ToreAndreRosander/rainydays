@@ -22,6 +22,49 @@
 
     --link-color: #EEEEEE;
     --link-color-h: #377375;
-
+    --product-card-bg: #377375;
+    --product-card-bg-h: #2B4F50;
     --white: #ffffff;
+
+    --hero-bg: linear-gradient(
+        to bottom, 
+        rgba(0, 0, 0, 0) 40%, 
+        rgba(0, 0, 0, 0.795) 60%, 
+        rgb(0, 0, 0) 80%, 
+        #000000 100%),
+        url(../images/pexels-nick-bondarev-4338015.jpg);
+    
+    --hero-bg-position: center;
+
+    --featured-selected-bg: linear-gradient(
+        to bottom, 
+        rgb(0, 0, 0) 1%, 
+        rgba(22,22,22, 0.842) 30%, 
+        rgba(22,22,22, 0.605) 40%, 
+        rgba(22,22,22, 0.609) 60%, 
+        rgba(22,22,22, 0.878) 70%, 
+        rgb(0, 0, 0) 99%), 
+        url(../images/blake-cheek-unsplash.jpg), rgb(0, 0, 0);
+
+    --featured-new-bg: linear-gradient(
+        to bottom, 
+        rgb(0, 0, 0) 0%, 
+        rgb(0, 0, 0) 20%, 
+        rgba(0, 0, 0, 0.847) 30%, 
+        rgba(0, 0, 0, 0.897) 40%, 
+        rgba(0, 0, 0, 0.847) 60%, 
+        rgba(0, 0, 0, 0.847) 70%, 
+        rgb(0, 0, 0) 80%, 
+        rgb(0, 0, 0) 100%), 
+        url(../images/toomas-tartes-Yizrl9N_eDA-unsplash1.jpg), rgb(0, 0, 0);
+
+    --recomended-bg: url(../images/will-swann-n4P5UGSYLEw-unsplash.png), rgba(0, 0, 0, 20%);
+
+    --showcase-bg: linear-gradient(
+        to bottom, 
+        rgba(64,64,64,0) 1%, 
+        rgba(64,64,64,0) 60%, 
+        rgba(0, 0, 0, 0.507) 70%, 
+        rgb(0, 0, 0) 100%),
+        url(../images/thom-holmes-57q4x4qTdbs-unsplash.jpg);
 }
