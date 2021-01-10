@@ -180,18 +180,18 @@ p {
     flex-wrap: wrap;
     min-height: 400px;
     background: linear-gradient(
-    to bottom, 
-    rgba(64,64,64,0) 40%, 
-    rgba(64,64,64,0) 60%, 
-    rgba(0, 0, 0, 0.774) 80%, 
-    #000000 100%
-    ),
+        to bottom, 
+        rgba(64,64,64,0) 40%, 
+        rgba(0, 0, 0, 0.692) 70%, 
+        rgb(0, 0, 0) 80%,
+        rgb(0, 0, 0) 100%,),
     url(../images/pexels-nick-bondarev-4338015.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5%;
     justify-content: center;
+    background-attachment: fixed;
 }
 
 .category-section div {
@@ -362,7 +362,7 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     min-height: 600px;
-    background: url(../images/will-swann-n4P5UGSYLEw-unsplash.png), rgba(0, 0, 0, 20%);
+    background: linear-gradient(to left, #000000 0%, #FFFFFF00 100%), url(../images/ashley-knedler-Pf5Pj7A5ddA-unsplash.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -373,6 +373,8 @@ p {
     margin: 0 auto 0 0;
     display: flex;
     flex-direction: column;
+    padding: 2rem;
+    flex: 1;
 }
 
 .rs-child {
@@ -384,8 +386,8 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    margin: 0 auto 0 auto;
-    min-height: 200px;
+    flex: 1;
+ 
 }
 
 .rs-child-l div {
@@ -393,12 +395,11 @@ p {
 }
 
 .recomended-sub-section-l {
-    margin: 0 0 0 auto;
+    
     display: flex;
     flex-direction: column;
-    width: 40%;
-    text-align: right;
-    transition: background-color 1s linear; 
+    min-width: 50%;
+    
 }
 
 .rs-child-btns {
@@ -559,7 +560,7 @@ p {
 }
 
 .ss-child-top {
-    
+    padding: 1rem 3rem 0rem;
     width: 100%;
 }
 
