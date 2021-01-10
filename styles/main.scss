@@ -100,6 +100,15 @@ h3 {
     margin-block-start: 0.5rem;
 }
 
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    color: var(--text-color);
+    letter-spacing: 4px;
+    margin-block-start: 0.5rem;
+}
+
 p {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
@@ -550,15 +559,27 @@ p {
     align-items: flex-start;
 }
 
+.ss-child-left h4 {
+    text-align: center;
+}
+
 .ss-child-top {
     
     width: 100%;
+}
+
+.ss-child-top h1 {
+    background-color: rgba(255, 62, 165, 0.486);
 }
 
 .ss-child-bottom {
     margin: auto auto 0 auto;
     text-align: center;
   
+}
+
+.ss-child-bottom h2 {
+    background-color: rgba(0, 163, 204, 0.486);
 }
 
 .ss-child-right {
@@ -568,6 +589,10 @@ p {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+}
+
+.ss-child-right h4 {
+    text-align: center;
 }
 
 .ss-collector {

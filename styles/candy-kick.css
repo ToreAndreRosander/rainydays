@@ -34,12 +34,13 @@
 
     --featured-selected-bg: linear-gradient(
         to bottom, 
-        rgb(0, 163, 204) 1%, 
-        rgba(0, 163, 204, 0.842) 30%, 
+        rgb(0, 163, 204) 0%, 
+        rgb(0, 163, 204) 20%,
+        rgba(0, 163, 204, 0.795) 30%, 
         rgba(0, 163, 204, 0.605) 40%, 
-        rgba(0, 163, 204, 0.609) 60%, 
-        rgba(0, 163, 204, 0.778) 70%, 
-        rgb(0, 163, 204) 99%), 
+        rgba(0, 163, 204, 0.808) 60%, 
+        rgb(0, 163, 204) 70%, 
+        rgb(0, 163, 204) 100%), 
         url(../images/blake-cheek-unsplash.jpg);
 
     --featured-new-bg: linear-gradient(
@@ -68,4 +69,29 @@
             rgba(19, 17, 18, 0.507) 70%, 
             rgb(14, 14, 14) 100%),
             url(../images/chris-henry-l-fJ7o__MlI-unsplash.jpg);
+}
+.featured-section-selected {
+    display: flex;
+    flex-direction: row;
+    min-height: 500px;
+    padding: 12rem 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    background: var(--featured-selected-bg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+@media only screen and (max-width: 1200px) {
+    .featured-section-selected {
+        background-size: cover;
+        background-attachment: unset;
+
+    }
+
+
+
 }
