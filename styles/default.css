@@ -68,3 +68,13 @@
         rgb(0, 0, 0) 100%),
         url(../images/thom-holmes-57q4x4qTdbs-unsplash.jpg);
 }
+
+.ss-child-top h1 {
+    background-color: 0;
+}
+
+
+
+.ss-child-bottom h2 {
+    background-color: 0;
+}
