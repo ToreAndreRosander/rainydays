@@ -69,7 +69,10 @@
             rgba(19, 17, 18, 0.507) 70%, 
             rgb(14, 14, 14) 100%),
             url(../images/chris-henry-l-fJ7o__MlI-unsplash.jpg);
-}
+            --recomended-bg-position: top;
+
+        }
+
 .featured-section-selected {
     display: flex;
     flex-direction: row;

@@ -67,6 +67,8 @@
         rgba(0, 0, 0, 0.507) 70%, 
         rgb(0, 0, 0) 100%),
         url(../images/thom-holmes-57q4x4qTdbs-unsplash.jpg);
+
+        --recomended-bg-position: top;
 }
 
 .ss-child-top h1 {

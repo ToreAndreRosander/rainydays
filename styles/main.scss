@@ -60,6 +60,7 @@
         url(../images/toomas-tartes-Yizrl9N_eDA-unsplash1.jpg), rgb(0, 0, 0);
 
     --recomended-bg: url(../images/will-swann-n4P5UGSYLEw-unsplash.png), rgba(0, 0, 0, 20%);
+    --recomended-bg-position: top;
 
     --showcase-bg: linear-gradient(
         to bottom, 
@@ -371,7 +372,7 @@ p {
     min-height: 600px;
     background: var(--recomended-bg);
     
-    background-position: bottom;
+    background-position: var(--recomended-bg-position);
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 2rem;
