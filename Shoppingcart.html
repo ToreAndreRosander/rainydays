@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <title>Rainydays - Cart</title>
+  
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+</head>
+<body>
+
+    <div class="details-container">
+        <section class="nav">
+
+            <a href="productlist.html">Men</a>
+    
+            <a href="productlist.html">Women</a>
+    
+            <a href="index.html"><img alt="rainydays logo" src="images/logo/rainydays_Logo_white_190.png"></a>
+
+            <a href="productlist.html">Kids</a>
+
+            <a href="productlist.html">Accesories</a>
+
+        </section>
+
+        <section class="cart-container">
+            <h1>Shopping cart</h1>    
+
+            <div class="cart-list">
+                <p>Image</p>
+                <p>Product name</p>
+                <p>short description</p>
+                <p>Price pr.</p>
+                <p>Pieces</p>
+                <p>Total</p>
+            </div>
+
+            <div id="1" class="cart-list">
+                <p>images</p>
+                <p>Product name1</p>
+                <p>short description</p>
+                <p id="price1">999</p>
+                <span class="cart-amount" id="minus1" onclick="change(this)">-</span>
+                <p id="amount1">1</p>
+                <span class="cart-amount" id="plus1" onclick="change(this)">+</span>
+                <p id="total1">999</p>
+            </div>
+            <div id="2" class="cart-list">
+                <p>images</p>
+                <p>Product name2</p>
+                <p>short description</p>
+                <p id="price2">999</p>
+                <input type="hidden" name="product2" id="product" value="3">
+                <span class="cart-amount" id="minus2" onclick="change(this)">-</span>
+                <p id="amount2">1</p>
+                <span class="cart-amount" id="plus2" onclick="change(this)">+</span>
+                <p id="total2">999</p>
+            </div>
+            <div id="3" class="cart-list">
+                <p>images</p>
+                <p>Product name</p>
+                <p>short description</p>
+                <p id="price3">999</p>
+                <span class="cart-amount" id="minus3" onclick="change(this)">-</span>
+                <p id="amount3">1</p>
+                <span class="cart-amount" id="plus3" onclick="change(this)">+</span>
+                <p id="total3">999</p>
+            </div>
+        </section>
+
+
+    </div>
+    <script src="js/cart.js"></script>
+</body>
+
+</html>

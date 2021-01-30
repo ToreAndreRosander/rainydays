@@ -1,0 +1,66 @@
+:root {
+    --bg-color: #161616;
+    --main-color: #377375;
+    --main-color-h:#2B4F50;
+
+    --main-color-confirm: #63A46C;
+    --main-color-confirm-h: #3F7647;
+
+    --extra-color-1: #377375;
+    --extra-color-1-h: #377375;
+
+    --text-color: #EEEEEE;
+    --text-color-light: #EEEEEE;
+    --text-color-dark: #292929;
+
+    --link-color: #EEEEEE;
+    --link-color-h: #377375;
+
+    --white: #ffffff;
+}
+
+.cart-list {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 2rem;
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+}
+
+.cart-container div {
+    border-bottom: 1px solid var(--text-color-light);
+}
+
+.details-bottom {
+    background-color: var(--white);
+    color: var(--text-color-dark);
+}
+
+.details-bottom p {
+    color: var(--text-color-dark);
+}
+
+.cart-image {
+    width: 20%;
+}
+
+.cart-amount {
+    border: 1px solid var(--main-color);
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+
+}
+
+.cart-amount:hover {
+    background-color: var(--main-color-h);
+    color: var(--text-color);
+    transform: scale(1.1);
+}
+
+
