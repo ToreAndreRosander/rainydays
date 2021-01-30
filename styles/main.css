@@ -724,16 +724,16 @@ p {
 
 .plist-left {
   flex: 1;
-  margin: auto; }
+  margin: 3rem auto; }
 
 .plist-center {
   flex: 4;
-  margin: auto;
+  margin: 0 auto;
   padding: 3rem; }
 
 .plist-right {
   flex: 1;
-  margin: auto; }
+  margin: 3rem auto; }
 
 /* re-usable product card detailed */
 .product-card-detailed {
@@ -742,7 +742,7 @@ p {
   display: flex;
   width: 90%;
   padding: 1rem 2rem;
-  margin: auto; }
+  margin: 2rem auto; }
 
 .pcd-left {
   width: 25%;
