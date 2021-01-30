@@ -124,13 +124,12 @@ p {
     min-height: 70px;
     padding: 1rem;
     background-color: black;
-}
-
-.nav-child {
-    width: 100%;
-    margin: auto;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
+
+
 
 /* Side border for nav children on hover */
 .nav-border-r {
@@ -151,22 +150,18 @@ p {
     border-left: 2px solid var(--main-color);
 }
 
-/* header logo */
-.nav-child img {
-    width: 50%;
-    height: 50%;
-}
 
-.nav-child a {
+.nav a {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 22px;
     color: var(--link-color);
     text-decoration: none;
     letter-spacing: 5px;
+    margin: auto;
 }
 
-.nav-child a:hover {
+.nav a:hover {
     color: var(--link-color-h);
     text-decoration: none; 
     font-weight: 700;
@@ -372,7 +367,7 @@ p {
 .recomended-sub-section-r {
     margin: 0 auto 0 0;
     display: flex;
-    flex-direction: column;
+
     padding: 2rem;
     flex: 1;
 }
