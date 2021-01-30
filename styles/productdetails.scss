@@ -21,7 +21,7 @@
 
 .details-top {
     display: flex;
-    min-height: 600px;
+    max-height: 400px;
     background-color: var(--bg-color);
     color: var(--text-color);
 }
@@ -42,5 +42,20 @@
 }
 
 .image-container {
+    display: flex;
+    justify-content: space-evenly;
     width: 50%;
+}
+
+.image-container img {
+    height: 45%;
+    margin: auto;
+}
+
+.add-product {
+    display: flex;
+}
+
+.add-product p {
+    margin: auto 2rem;
 }
