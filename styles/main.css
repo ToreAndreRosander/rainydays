@@ -310,7 +310,7 @@ p {
   cursor: pointer; }
 
 .category-card1 {
-  background: url(../images/man-4174727_640.png);
+  background: url(../images/man-4174727_640.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -332,7 +332,7 @@ p {
   font-size: 36px; }
 
 .category-card2 {
-  background: url(../images/pexels-matt-hardy-2755165.png);
+  background: url(../images/pexels-matt-hardy-2755165.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -351,7 +351,7 @@ p {
   background-color: var(--main-color-h); }
 
 .category-card3 {
-  background: url(../images/umbrella-4507999_640.png);
+  background: url(../images/umbrella-4507999_640.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -370,7 +370,7 @@ p {
   background-color: var(--main-color-h); }
 
 .category-card4 {
-  background: url(../images/umbrella-4507999_640.png);
+  background: url(../images/andreas-wagner-8H5kNkYmJYQ-unsplash.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -435,7 +435,7 @@ p {
   flex-direction: row;
   flex-wrap: wrap;
   min-height: 600px;
-  background: linear-gradient(to left, #000000 0%, #FFFFFF00 100%), url(../images/ashley-knedler-Pf5Pj7A5ddA-unsplash.jpg);
+  background: linear-gradient(to left, #000000 0%, #FFFFFF00 100%), url(../images/jay-mantri-TFyi0QOx08c-unsplash-s.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
