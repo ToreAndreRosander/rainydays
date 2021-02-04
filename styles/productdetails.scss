@@ -29,16 +29,31 @@
 .details-container {
     display: flex;
     flex-direction: column;
-    margin: 3rem;
+    
 }
 
 .details-bottom {
     background-color: var(--white);
     color: var(--text-color-dark);
+    display: flex;
+    flex-direction: row;
+    padding: 3rem;
 }
 
 .details-bottom p {
     color: var(--text-color-dark);
+}
+
+.product-description {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.product-feedback {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .image-container {

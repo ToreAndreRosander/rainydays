@@ -23,6 +23,9 @@
 @import 'styles/productdetails';
 @import 'styles/cart';
 @import 'styles/single';
+@import 'styles/productlist';
+@import 'styles/about-us';
+@import 'styles/support';
 body {
     background-color: #000000;
     color: var(--text-color);
@@ -359,7 +362,7 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     min-height: 600px;
-    background: linear-gradient(to left, #000000 0%, #FFFFFF00 100%), url(../images/jay-mantri-TFyi0QOx08c-unsplash-s.jpg);
+    background: linear-gradient(to left, #00000052 0%, #ffffff00 100%), linear-gradient(to right, #0000005e 0%, #00000000 100%), url(../images/jay-mantri-TFyi0QOx08c-unsplash-s.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -370,8 +373,8 @@ p {
 .recomended-sub-section-r {
     margin: 0 auto 0 0;
     display: flex;
-
-    padding: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 3rem;
     flex: 1;
 }
 
@@ -380,11 +383,21 @@ p {
     margin: 0 auto 0 auto;
 }
 
+.rs-child img {
+    margin: auto;
+}
+
+.rs-child h3 {
+    margin: auto;
+}
+
 .rs-child-l {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    
     flex: 1;
+    align-items: flex-end;
+    flex-direction: column;
  
 }
 
@@ -412,6 +425,7 @@ p {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    flex: 1;
 }
 
 
@@ -541,7 +555,7 @@ p {
         rgba(0, 0, 0, 0.507) 70%, 
         rgb(0, 0, 0) 100%
     ),
-    url(../images/thom-holmes-57q4x4qTdbs-unsplash.jpg);
+    url(../images/thom-holmes-57q4x4qTdbs-unsplash-s.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -733,6 +747,16 @@ p {
             margin: 2rem 1rem;
         }
 
+        // remove banners on product list page
+
+        .plist-left {
+            display: none;
+        }
+
+        .plist-right {
+            display: none;
+        }
+
 }
 
 @media only screen and (max-width: 1352px) {
@@ -897,7 +921,7 @@ p {
     
     }
 .recomended-sub-section-r {
-    max-width: 50%;
+    
     margin: 0;
     text-align: center;
 }
@@ -905,70 +929,37 @@ p {
 
 
 
-.plist-hero-section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-height: 400px;
-    background: url(../images/pexels-vlad-bagacian-2819551.jpg);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
- 
-    justify-content: center;
-    width: 100%;
-}
-.plist-hero-sub {
-    padding: 2rem;
-    width: 100%;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    text-align: center;
-}
 
-.plist-container {
-    background-color: #EEEEEE;
-    display: flex;
-    flex-direction: row;
-    padding: 2rem;
-    width: 100%;;
-    justify-content: center;
-}
-
-.plist-left {
-    flex: 1;
-    margin: 3rem auto;
-}
-
-.plist-center {
-    flex: 4;
-    margin: 0 auto;
-    padding: 3rem;
-}
-
-.plist-right {
-    flex: 1;
-    margin: 3rem auto;
-}
 
 /* re-usable product card detailed */
 .product-card-detailed {
     background-color: #37737521;
     color: black;
     display: flex;
-    width: 90%;    
+    flex-wrap: wrap;
+  
     padding: 1rem 2rem;
-    margin: 2rem auto;
+    margin: 0 auto 2rem;
 }
 
+.pcd-title {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 .pcd-left {
-    width: 25%;
+    display: flex;
+    flex: 1;
     padding: 1rem;
 }
 
 .pcd-center {
-    width: 60%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 3;
+    
     padding: 1rem;
 }
 
@@ -979,9 +970,10 @@ p {
 }
 
 .pcd-bottom {
-    min-width: 80%;
-    padding: 1rem;
+    
+    padding: 1rem 0;
     display: flex;
+    justify-content: flex-end;
 }
 
 .pcd-row {

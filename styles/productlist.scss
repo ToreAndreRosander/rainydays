@@ -1,0 +1,71 @@
+:root {
+    --bg-color: #161616;
+    --main-color: #377375;
+    --main-color-h:#2B4F50;
+
+    --main-color-confirm: #63A46C;
+    --main-color-confirm-h: #3F7647;
+
+    --extra-color-1: #377375;
+    --extra-color-1-h: #377375;
+
+    --text-color: #EEEEEE;
+    --text-color-light: #EEEEEE;
+    --text-color-dark: #292929;
+
+    --link-color: #EEEEEE;
+    --link-color-h: #377375;
+
+    --white: #ffffff;
+}
+
+.plist-hero-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 550px;
+    background: url(../images/pexels-vlad-bagacian-2819551.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: center;
+    width: 100%;
+}
+
+.plist-hero-section div {
+    margin: auto;
+}
+
+.plist-hero-sub {
+    padding: 2rem;
+    width: 100%;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+.plist-container {
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    width: 100%;;
+    justify-content: center;
+}
+
+.plist-left {
+    flex: 1;
+    margin: 3rem auto;
+}
+
+.plist-center {
+    flex: 4;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+.plist-right {
+    flex: 1;
+    margin: 3rem auto;
+}

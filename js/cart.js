@@ -9,6 +9,13 @@ function change(name) {
         total = current * price;
         document.getElementById("amount" + product).innerHTML = current;
         document.getElementById("total" + product).innerHTML = total;
+
+        if(current == 0) {
+            document.getElementById("minus" + product).style.display = 'none';
+        }
+        else if(current >= 1) {
+            document.getElementById("minus" + product).style.display = 'flex';
+        }
     }
 
     else if(name2 == 'plus' + product) {
@@ -16,6 +23,9 @@ function change(name) {
         total = current * price;
         document.getElementById("amount" + product).innerHTML = current;
         document.getElementById('total' + product).innerHTML = total;
+        if(current >= 1) {
+            document.getElementById("minus" + product).style.display = 'flex';
+        }
     }
     
 }

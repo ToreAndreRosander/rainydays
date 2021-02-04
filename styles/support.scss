@@ -1,0 +1,62 @@
+:root {
+    --bg-color: #161616;
+    --main-color: #377375;
+    --main-color-h:#2B4F50;
+
+    --main-color-confirm: #63A46C;
+    --main-color-confirm-h: #3F7647;
+
+    --extra-color-1: #377375;
+    --extra-color-1-h: #377375;
+
+    --text-color: #EEEEEE;
+    --text-color-light: #EEEEEE;
+    --text-color-dark: #292929;
+
+    --link-color: #EEEEEE;
+    --link-color-h: #377375;
+
+    --white: #ffffff;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 10rem;
+
+}
+.contact-options {
+    display: flex;
+    margin: 3rem;
+}
+
+.contact-options div {
+    display: flex;
+    flex: 1;
+    margin: auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-form :nth-child(1)  { width: 9%; }
+.contact-form :nth-child(2)  {     width: 33%;
+    margin: 1rem 0;
+    padding: 1rem; }
+.contact-form :nth-child(3)  { width: 9%; }
+.contact-form :nth-child(4)  {     width: 33%;
+    margin: 1rem 0;
+    padding: 1rem; }
+.contact-form :nth-child(5)  { width: 9%; }
+.contact-form :nth-child(6)  {     width: 33%;
+    margin: 1rem 0;
+    padding: 1rem; }
+.contact-form :nth-child(7)  { width: 9%; }
+.contact-form :nth-child(8)  {     width: 33%;
+    margin: 1rem 0;
+    padding: 1rem; }
+.contact-form :nth-child(9)  { width: 9%; }
+.contact-form :nth-child(10)  {     width: 100%;
+    margin: 1rem 0;
+    padding: 1rem; }
