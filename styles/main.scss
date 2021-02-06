@@ -953,7 +953,8 @@ p {
 .pcd-left {
     display: flex;
     flex: 1;
-    padding: 1rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .pcd-center {
@@ -962,7 +963,7 @@ p {
     flex-wrap: wrap;
     flex: 3;
     
-    padding: 1rem;
+    padding: 1rem 0 0 1rem;
 }
 
 .pcd-right {
@@ -973,7 +974,7 @@ p {
 
 .pcd-bottom {
     
-    padding: 1rem 0;
+    padding: 1rem 0 0;
     display: flex;
     justify-content: flex-end;
 }
