@@ -713,15 +713,17 @@ p {
     flex-wrap: wrap;
 }
 
-.insta-child {
-    padding: 3px;
-    cursor: pointer;
-}
-
-.insta-child img{
+.insta-container img {
     width: 100px;
     height: 100px;
-    object-fit: cover;
+    margin: 0.2rem;
+    cursor: pointer;
+    
+}
+
+.insta-container img:hover {
+    transform: scale(1.5);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.342);
 }
 
 /* css for smaller screens */
@@ -870,7 +872,7 @@ p {
     /* Footer responsivnes */
 
     .footer-child-left {
-        width: 100%;
+      /*  width: 100%; */
     }
 
     .footer-child-right {
