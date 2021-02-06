@@ -11,10 +11,12 @@ function change(name) {
         document.getElementById("total" + product).innerHTML = total;
 
         if(current == 0) {
-            document.getElementById("minus" + product).style.display = 'none';
+            document.getElementById("minus" + product).style.borderColor = 'var(--text-color-light)';
+            document.getElementById("minus" + product).setAttribute( "onclick", "" );
         }
         else if(current >= 1) {
-            document.getElementById("minus" + product).style.display = 'flex';
+            document.getElementById("minus" + product).style.borderColor = 'var(--main-color)';
+            document.getElementById("minus" + product).setAttribute( "onclick", "change(this)" );
         }
     }
 
@@ -24,7 +26,8 @@ function change(name) {
         document.getElementById("amount" + product).innerHTML = current;
         document.getElementById('total' + product).innerHTML = total;
         if(current >= 1) {
-            document.getElementById("minus" + product).style.display = 'flex';
+            document.getElementById("minus" + product).style.borderColor = 'var(--main-color)';
+            document.getElementById("minus" + product).setAttribute( "onclick", "change(this)" );
         }
     }
     

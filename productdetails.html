@@ -32,13 +32,17 @@
 
             <div class="image-container">
                 <div class="product-image-grid">
-                    <img src="images/products/vestergapet/vestergapet3-s.jpg">
-                    <img src="images/products/vestergapet/vestergapet4-s.jpg">
-                    <img src="images/products/vestergapet/vestergapet3-s.jpg">
-                    <img src="images/products/vestergapet/vestergapet 10216160013_7-s.jpg">
+                    <div>
+                        <img src="images/products/vestergapet/vestergapet3-s.jpg" onclick="changeimage(this)">
+                        <img src="images/products/vestergapet/vestergapet4-s.jpg" onclick="changeimage(this)">
+                    </div>
+                    <div>
+                        <img src="images/products/vestergapet/vestergapet3-s.jpg" onclick="changeimage(this)">
+                        <img src="images/products/vestergapet/vestergapet 10216160013_7-s.jpg" onclick="changeimage(this)">
+                    </div>
                 </div>
                 <div class="product-main-image">
-                    <img src="images/products/vestergapet/vestergapet45-s.jpg">
+                    <img id="main-image" src="images/products/vestergapet/vestergapet45-s.jpg">
                 </div>
             </div>
 
@@ -46,29 +50,49 @@
                 <h1 class="product-details-title text-less-margin">Vestergapet rain coat</h1><h2 class="product-details-price"><span id="price2">999</span>,- NOK</h2>
                 <p>Vestergapet raincoat is our top model in rainwear, and is made of solid and strong SuperProof material. 
                     </p>
-                
-                <div class="size-container">
-                    <span class="size-span">S</span>
-                    <span class="size-span">M</span>
-                    <span class="size-span">L</span>
-                    <span class="size-span">XL</span>
-                    <span class="size-span">XXL</span>
-                </div>
-                <input type="hidden" name="product2" id="product" value="3">
-                
-                <div id="2" class="add-product">
-                    <span class="details-amount" id="minus2" onclick="change(this)">-</span>
-                    <p id="amount2">1</p>
-                    <span class="details-amount" id="plus2" onclick="change(this)">+</span>
-
-                    <p><span id="total2">999</span>,- NOK</p>
-                    <button class="button">Add to cart</button>
-                </div>
-                
+                    <span id="purchase-header" class="purchase-header">
+                        <div class="size-container">
+                            <span class="size-span">S</span>
+                            <span class="size-span">M</span>
+                            <span class="size-span">L</span>
+                            <span class="size-span">XL</span>
+                            <span class="size-span">XXL</span>
+                        </div>
+                        <input type="hidden" name="product2" id="product" value="3">
+                        
+                        <div id="2" class="add-product">
+                            <span class="details-amount" id="minus2" onclick="change(this)">-</span>
+                            <p id="amount2">1</p>
+                            <span class="details-amount" id="plus2" onclick="change(this)">+</span>
+        
+                            <p><span id="total2">999</span>,- NOK</p>
+                            <button class="button">Add to cart</button>
+                        </div>
+                    </span>
                 
             </div>
-        </section>
 
+            
+        </section>
+        <section id="purchase-header-mobile" class="purchase-header-mobile">
+            <div class="size-container">
+                <span class="size-span">S</span>
+                <span class="size-span">M</span>
+                <span class="size-span">L</span>
+                <span class="size-span">XL</span>
+                <span class="size-span">XXL</span>
+            </div>
+            <input type="hidden" name="product2" id="product" value="3">
+            
+            <div id="2" class="add-product">
+                <span class="details-amount" id="minus2" onclick="change(this)">-</span>
+                <p id="amount2">1</p>
+                <span class="details-amount" id="plus2" onclick="change(this)">+</span>
+
+                <p><span id="total2">999</span>,- NOK</p>
+                <button class="button">Add to cart</button>
+            </div>
+        </section>
         <section class="product-details-bottom">
 
             <section class="product-description">
@@ -88,14 +112,19 @@
             </section>
             
             <section class="product-feedback">
-                <h2>Product description</h2>
-                <p>product details</p>
+                <h2>Technical</h2>
+                <p><span class="material-icons md-36 ">ac_unit</span>product details</p>
+                <p><span class="material-icons md-36 ">ac_unit</span>product details</p>
+                <p><span class="material-icons md-36 ">ac_unit</span>product details</p>
+                <p><span class="material-icons md-36 ">ac_unit</span>product details</p>
+                <p><span class="material-icons md-36 ">ac_unit</span>product details</p>
             </section>
 
         </section>
 
     </div>
     <script src="js/cart.js"></script>
+    <script src="js/productdetails.js"></script>
 </body>
 
 </html>

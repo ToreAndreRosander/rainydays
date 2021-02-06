@@ -83,6 +83,7 @@
 
 .details-top {
   display: flex;
+  flex-wrap: wrap;
   max-height: 400px;
   background-color: var(--bg-color);
   color: var(--text-color); }
@@ -96,7 +97,8 @@
   color: var(--text-color-dark);
   display: flex;
   flex-direction: row;
-  padding: 3rem; }
+  padding: 3rem;
+  flex-wrap: wrap; }
 
 .product-details-bottom p {
   color: var(--text-color-dark); }
@@ -104,23 +106,31 @@
 .product-description {
   display: flex;
   flex-direction: column;
-  flex: 1; }
+  flex: 2;
+  margin: 4rem 2rem 4rem 4rem; }
+
+.product-description h3 {
+  color: var(--text-color-dark); }
 
 .product-feedback {
   display: flex;
   flex-direction: column;
-  flex: 1; }
+  flex: 1;
+  margin: 4rem 4rem 4rem 2rem;
+  align-items: center; }
 
 .image-container {
   display: flex;
   justify-content: space-evenly;
-  width: 50%; }
+  width: 50%;
+  order: 1; }
 
 .details-options {
   display: flex;
   flex-wrap: wrap;
   padding: 1rem 2rem;
-  width: 50%; }
+  width: 45%;
+  order: 2; }
 
 .product-main-image {
   display: flex;
@@ -132,21 +142,29 @@
   flex-wrap: wrap;
   width: 60%; }
 
-.product-image-grid img {
-  margin: auto;
-  padding: 1rem;
-  height: 150px; }
+.product-image-grid div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.product-image-grid div img {
+  margin: 0 auto;
+  padding: 0 1rem;
+  height: 170px; }
+
+.product-image-grid div img:hover {
+  transform: scale(1.1);
+  cursor: pointer; }
 
 .product-main-image img {
-  height: 100%;
+  height: 400px;
   margin: auto; }
 
 .add-product {
   display: flex;
   align-items: center;
   margin: 0 auto 0 0;
-  width: 100%;
-  justify-content: space-between; }
+  width: 100%; }
 
 .add-product p {
   margin: auto 2rem; }
@@ -177,9 +195,41 @@
 .size-span:hover {
   background-color: var(--main-color); }
 
+/* sticky purchase "header" */
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+.purchase-header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--bg-color); }
+
+.purchase-header-mobile {
+  display: none; }
+
 @media only screen and (max-width: 1079px) {
   .details-top {
-    max-height: 800px; } }
+    max-height: 800px; }
+  .image-container {
+    order: 1;
+    width: 100%; }
+  .purchase-header {
+    display: none; }
+  .add-product {
+    margin: 0 auto 0 2rem; }
+  .size-container {
+    margin: auto auto 0 2rem; }
+  .purchase-header-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--bg-color); }
+  .details-options {
+    order: 2;
+    width: 100%; } }
 
 :root {
   --bg-color: #161616;
