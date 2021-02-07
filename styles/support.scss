@@ -37,35 +37,27 @@
     margin: 3rem 0;
 }
 
+.contact-options a {
+    color: var(--main-color);
+}
+
+.contact-options a:hover {
+    color: var(--main-color-h);
+}
+
 .contact-options div {
     display: flex;
     flex: 1;
     margin: auto;
-    justify-content: space-between;
+    
     align-items: center;
 }
 
 .contact-form {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+   
+   
 }
-.contact-form :nth-child(1)  { width: 9%; }
-.contact-form :nth-child(2)  {     width: 33%;
-    margin: 1rem 0;
-    padding: 1rem; }
-.contact-form :nth-child(3)  { width: 9%; }
-.contact-form :nth-child(4)  {     width: 33%;
-    margin: 1rem 0;
-    padding: 1rem; }
-.contact-form :nth-child(5)  { width: 9%; }
-.contact-form :nth-child(6)  {     width: 33%;
-    margin: 1rem 0;
-    padding: 1rem; }
-.contact-form :nth-child(7)  { width: 9%; }
-.contact-form :nth-child(8)  {     width: 33%;
-    margin: 1rem 0;
-    padding: 1rem; }
-.contact-form :nth-child(9)  { width: 9%; }
-.contact-form :nth-child(10)  {     width: 100%;
-    margin: 1rem 0;
-    padding: 1rem; }
+
