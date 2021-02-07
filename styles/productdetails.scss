@@ -167,7 +167,7 @@
     align-items: center;
     margin: 0 auto 0 0;
     width: 100%;
-
+    flex-wrap: wrap;
 }
 
 .add-product p {
@@ -280,4 +280,11 @@
         width: 50%;
         
     }
+}
+
+@media only screen and (max-width: 509px) {
+.product-image-grid div img {
+    margin: auto;
+    height: 110px;
+}
     }

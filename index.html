@@ -14,59 +14,53 @@
 
 <body>
     <div class="flex-container">
-        <span> <a href="index.html"><img alt="rainydays logo" src="images/logo/rainydays_Logo_white_190.png"></a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <span class="material-icons">
-                menu
-            </span>
-        </span>
-        <section class="nav" id="mobile-nav">
-            <a href="productlist.html">Men</a>
-           
-            <a href="productlist.html">Women</a>
-     
-           
-
-            <a href="productlist.html">Kids</a>
-    
-            <a href="productlist.html">Accesories</a>
-        </section>
         
             
-          </a>
         <section id="nav" class="nav">
 
                 <a href="productlist.html">Men</a>
            
                 <a href="productlist.html">Women</a>
          
-                <a href="index.html"><img alt="rainydays logo" src="images/logo/rainydays_Logo_white_190.png"></a>
+                <a href="index.html" id="mobile-menu-logo"><img alt="rainydays logo" src="images/logo/rainydays_Logo_white_190.png"></a>
    
                 <a href="productlist.html">Kids</a>
         
                 <a href="productlist.html">Accesories</a>
+
+                <a href="#" onclick="displayhamburger()" id="mobile-menu-icon"><span class="material-icons">
+                    menu</span>
+                </a>
      
+        </section>            
+     
+        <section class="nav mobile-nav" id="mobile-nav">
+            <a href="./index.html">Home</a>
+
+            <a href="productlist.html">Men</a>
+           
+            <a href="productlist.html">Women</a>
+
+            <a href="productlist.html">Kids</a>
+    
+            <a href="productlist.html">Accesories</a>
+
+            <a href="./customerservice.html">Customer support</a>
         </section>
-        <script>
-            function myFunction() {
-              var x = document.getElementById("mobile-nav");
-              if (x.style.display === "block") {
-                x.style.display = "none";
-              } else {
-                x.style.display = "block";
-              }
-            }
-            </script>
+        
+            
+          
+
     <section class="category-section">
        
         <div class="product-card-container">
-            <a class="category-card1" href="./productlist.html">
+            <a class="category-card1 category-card" href="./productlist.html">
                 <div class="category-bottom">
                     <h3>Men</h3>
                 </div>
           
             </a>
-            <a href="./productlist.html" class="category-card2">
+            <a href="./productlist.html" class="category-card2 category-card">
                 <div class="category-bottom">
                     <h3>Women</h3>
                 </div>
@@ -74,13 +68,13 @@
         </div>
 
         <div class="product-card-container">
-            <a href="./productlist.html" class="category-card3">
+            <a href="./productlist.html" class="category-card3 category-card">
                 <div class="category-bottom">
                     <h3>kids</h3>
                 </div>
             </a>
 
-            <a href="./productlist.html" class="category-card4">
+            <a href="./productlist.html" class="category-card4 category-card">
                 <div class="category-bottom">
                     <h3>Accesories</h3>
                 </div>
@@ -432,6 +426,7 @@
 
 <script src="js/newsletter.js">openNewsletter();</script>
 <script src="js/js-popup.js"></script>
+<script src="js/main.js"></script>
 </body>
 
 </html>

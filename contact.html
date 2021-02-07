@@ -14,19 +14,37 @@
 <body>
 
     <div class="details-container">
-        <section class="nav">
+        <section id="nav" class="nav">
 
             <a href="productlist.html">Men</a>
-    
+       
             <a href="productlist.html">Women</a>
-    
-            <a href="index.html"><img alt="rainydays logo" src="images/logo/rainydays_Logo_white_190.png"></a>
+     
+            <a href="index.html" id="mobile-menu-logo"><img alt="rainydays logo" src="images/logo/rainydays_Logo_white_190.png"></a>
 
             <a href="productlist.html">Kids</a>
-
+    
             <a href="productlist.html">Accesories</a>
 
-        </section>
+            <a href="#" onclick="displayhamburger()" id="mobile-menu-icon"><span class="material-icons">
+                menu</span>
+            </a>
+ 
+    </section>            
+ 
+    <section class="nav mobile-nav" id="mobile-nav">
+        <a href="./index.html">Home</a>
+
+        <a href="productlist.html">Men</a>
+       
+        <a href="productlist.html">Women</a>
+
+        <a href="productlist.html">Kids</a>
+
+        <a href="productlist.html">Accesories</a>
+
+        <a href="./customerservice.html">Customer support</a>
+    </section>
 
         <section class="details-top">
 
@@ -47,6 +65,7 @@
         </section>
 
     </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

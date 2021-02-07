@@ -183,7 +183,8 @@
   display: flex;
   align-items: center;
   margin: 0 auto 0 0;
-  width: 100%; }
+  width: 100%;
+  flex-wrap: wrap; }
 
 .add-product p {
   margin: auto 2rem; }
@@ -256,6 +257,11 @@
     width: 50%; }
   .product-main-image {
     width: 50%; } }
+
+@media only screen and (max-width: 509px) {
+  .product-image-grid div img {
+    margin: auto;
+    height: 110px; } }
 
 :root {
   --bg-color: #161616;
@@ -688,7 +694,6 @@
   margin: auto; }
 
 body {
-  display: flex;
   background-color: black;
   color: var(--text-color);
   margin: 0; }
@@ -783,21 +788,6 @@ p {
   justify-content: center;
   text-align: center; }
 
-/* Side border for nav children on hover */
-.nav-border-r {
-  border-right: 0px solid var(--main-color);
-  transition: 0.1s ease; }
-
-.nav-border-r:hover {
-  border-right: 2px solid var(--main-color); }
-
-.nav-border-l {
-  border-left: 0px solid black;
-  transition: 0.1s ease; }
-
-.nav-border-l:hover {
-  border-left: 2px solid var(--main-color); }
-
 .nav a {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -829,87 +819,44 @@ p {
 .category-section div {
   cursor: pointer; }
 
-.category-card1 {
-  background: url(../images/man-4174727_640.jpg);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  min-width: 230px;
-  min-height: 280px;
-  margin: auto 1px -190px 0;
-  transition: transform .5s; }
-
-.category-card1:hover {
-  transform: scale(1.05);
-  z-index: 2;
-  box-shadow: 2px 2px 18px #0000006b; }
-
-.category-card1:hover div {
-  background-color: var(--main-color-h); }
-
 .material-icons.md-36 {
   font-size: 36px; }
 
 .material-icons.md-56 {
   font-size: 66px; }
 
-.category-card2 {
-  background: url(../images/pexels-matt-hardy-2755165.jpg);
+.category-card {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   min-width: 230px;
   min-height: 280px;
-  margin: auto 1px -190px 0;
   transition: transform .5s; }
 
-.category-card2:hover {
+.category-card:hover {
   transform: scale(1.05);
   z-index: 2;
   box-shadow: 2px 2px 18px #0000006b; }
 
-.category-card2:hover div {
+.category-card:hover div {
   background-color: var(--main-color-h); }
+
+.category-card1 {
+  background: url(../images/man-4174727_640.jpg);
+  margin: auto 1px -190px 0; }
+
+.category-card2 {
+  background: url(../images/pexels-matt-hardy-2755165.jpg);
+  margin: auto 1px -190px 0; }
 
 .category-card3 {
   background: url(../images/umbrella-4507999_640.jpg);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  min-width: 230px;
-  min-height: 280px;
-  margin: auto 1px -190px 0;
-  transition: transform .5s; }
-
-.category-card3:hover {
-  transform: scale(1.05);
-  z-index: 2;
-  box-shadow: 2px 2px 18px #0000006b; }
-
-.category-card3:hover div {
-  background-color: var(--main-color-h); }
+  margin: auto 1px -190px 0; }
 
 .category-card4 {
   background: url(../images/andreas-wagner-8H5kNkYmJYQ-unsplash.jpg);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  min-width: 230px;
-  min-height: 280px;
-  margin: auto 0 -190px 0;
-  transition: transform .5s; }
-
-.category-card4:hover {
-  transform: scale(1.05);
-  z-index: 2;
-  box-shadow: 2px 2px 18px #0000006b; }
-
-.category-card4:hover div {
-  background-color: var(--main-color-h); }
+  margin: auto 0 -190px 0; }
 
 .category-bottom {
   background-color: var(--main-color);
@@ -1305,6 +1252,9 @@ p {
   align-items: center;
   justify-content: space-between; }
 
+.mobile-nav {
+  display: none; }
+
 .pcd-row-btn:hover {
   cursor: pointer; }
 
@@ -1351,39 +1301,18 @@ p {
 
 @media only screen and (max-width: 799px) {
   /*Hamburger menu*/
-  /* Mobile nav */
-  .nav {
-    display: none; }
-  /* Style the navigation menu */
   .mobile-nav {
     overflow: hidden;
-    background-color: #333;
+    background-color: var(--bg-color);
     position: relative; }
-  /* Hide the links inside the navigation menu (except for logo/home) */
-  .mobile-nav {
+  .nav a {
     display: none; }
-  /* Style navigation menu links */
-  .mobile-nav a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+  .nav #mobile-menu-icon {
     display: block; }
-  /* Style the hamburger menu */
-  .mobile-nav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0; }
-  /* Add a grey background color on mouse-over */
-  .mobile-nav a:hover {
-    background-color: #ddd;
-    color: black; }
-  /* Style the active link (or home/logo) */
-  .active {
-    background-color: #4CAF50;
-    color: white; }
+  .nav #mobile-menu-logo {
+    display: block; }
+  .mobile-nav a {
+    display: block; }
   .header-title {
     min-width: 70%; }
   /* Makes the category cards stack nicely ontop on eachother and add extra empty space for the following featured section.*/
