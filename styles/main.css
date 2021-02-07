@@ -321,19 +321,6 @@
   .cart-container {
     margin: 3rem 2rem 5rem; } }
 
-.nav ul {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0; }
-
-.nav li {
-  display: inline; }
-
-.nav li:hover {
-  display: inline;
-  color: var(--link-color-h); }
-
 .plist-hero-section {
   display: flex;
   flex-direction: row;
