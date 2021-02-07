@@ -6,6 +6,9 @@
     --main-color-confirm: #63A46C;
     --main-color-confirm-h: #3F7647;
 
+    --main-color-cancel: #CE4A50;
+    --main-color-cancel-h: #AB2026;
+
     --extra-color-1: #377375;
     --extra-color-1-h: #377375;
 
@@ -27,7 +30,7 @@
 @import 'styles/about-us';
 @import 'styles/support';
 body {
-    background-color: #000000;
+    background-color: black;
     color: var(--text-color);
     margin: 0;
 }
@@ -455,6 +458,10 @@ p {
     padding: 1rem;
     transition: transform .5s;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: wheat;
 }
 
 .product-card-child {
@@ -464,9 +471,12 @@ p {
     text-align: center;
 }
 
-.product-card-child img {
+.product-card img {
     transition: transform .8s;
     transform-style: preserve-3d;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
 }
 
 .product-card:hover {
@@ -482,6 +492,11 @@ p {
 /* Buttons */
 
 .button {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -501,6 +516,7 @@ p {
 }
 
 .button-wide {
+    display: flex;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -512,6 +528,10 @@ p {
     cursor: pointer;
     border: 0;
     text-shadow: 1px 1px 5px black;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
 .button-wide:hover {
@@ -984,4 +1004,10 @@ p {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+
+
+
+.pcd-row-btn:hover {
+    cursor: pointer;
 }

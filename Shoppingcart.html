@@ -13,7 +13,7 @@
 </head>
 <body>
 
-    <div class="details-container">
+    <div class="cart-details-container">
         <section class="nav">
 
             <a href="productlist.html">Men</a>
@@ -32,44 +32,63 @@
             <h1>Shopping cart</h1>    
 
             <div class="cart-list">
-                <p>Image</p>
-                <p>Product name</p>
-                <p>short description</p>
-                <p>Price pr.</p>
-                <p>Pieces</p>
-                <p>Total</p>
+
             </div>
 
-            <div id="1" class="cart-list">
-                <p>images</p>
-                <p>Product name1</p>
-                <p>short description</p>
-                <p id="price1">999</p>
-                <span class="cart-amount" id="minus1" onclick="change(this)">-</span>
-                <p id="amount1">1</p>
-                <span class="cart-amount" id="plus1" onclick="change(this)">+</span>
-                <p id="total1">999</p>
+            <div id="1x" class="cart-list">
+                <img src="./images/instagram/instashots1-s.jpg">
+                
+                    <p>Product name1<br>
+                    Size: Small</p>
+                    
+                    <p>Price pr. piece<br>
+                        <span id="price1">999</span>,-</p>
+                
+                <span id="1" class="cart-amount-btns">
+                    <span class="cart-amount" id="minus1" onclick="change(this)">-</span>
+                    <p id="amount1">1</p>
+                    <span class="cart-amount" id="plus1" onclick="change(this)">+</span>
+                </span>
+                <p>Subtotal<br>
+                    <span id="total1">999</span>,-</p>
             </div>
-            <div id="2" class="cart-list">
-                <p>images</p>
-                <p>Product name2</p>
-                <p>short description</p>
-                <p id="price2">999</p>
+            <div id="2x" class="cart-list">
+                <img src="./images/instagram/instashots1-s.jpg">
+                <p>Farbakken jacket<br>
+                Size: Medium</p>
+                
+                <p>Price pr. piece<br>
+                    <span id="price2">999</span>,-</p>
+                    <span id="2" class="cart-amount-btns">
                 <input type="hidden" name="product2" id="product" value="3">
                 <span class="cart-amount" id="minus2" onclick="change(this)">-</span>
                 <p id="amount2">1</p>
                 <span class="cart-amount" id="plus2" onclick="change(this)">+</span>
-                <p id="total2">999</p>
+            </span>
+            <p>Subtotal<br>
+                <span id="total2">999</span>,-</p>
             </div>
-            <div id="3" class="cart-list">
-                <p>images</p>
-                <p>Product name</p>
-                <p>short description</p>
-                <p id="price3">999</p>
+
+            <div id="3x" class="cart-list">
+                <img src="./images/instagram/instashots1-s.jpg">
+                <p>Farbakken jacket<br>
+                    Size: Xtra large</p>
+                <p>Price pr. piece<br>
+                    <span id="price3">999</span>,-</p>
+                    <span id="3" class="cart-amount-btns">
                 <span class="cart-amount" id="minus3" onclick="change(this)">-</span>
                 <p id="amount3">1</p>
                 <span class="cart-amount" id="plus3" onclick="change(this)">+</span>
-                <p id="total3">999</p>
+            </span>
+                <p>Subtotal<br>
+                    <span id="total3">999</span>,-</p>
+            </div>
+            <div class="cart-list-btns">
+                
+                <form action="./productlist.html"><button name="submit" class="button-wide">Continue shopping</button></form>
+                <button class="button-wide">Checkout</button>
+                <p>Total order value:<br>
+                    <span id="total">2997</span>,-</p>
             </div>
         </section>
 
