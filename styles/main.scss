@@ -32,6 +32,7 @@
 @import 'styles/checkout';
 
 body {
+    display: flex;
     background-color: black;
     color: var(--text-color);
     margin: 0;
@@ -130,6 +131,7 @@ p {
 
 .nav {
     display: flex;
+    width: 100%;
     flex-direction: row;
     min-height: 70px;
     padding: 1rem;

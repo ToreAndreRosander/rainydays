@@ -237,7 +237,10 @@
 
 @media only screen and (max-width: 679px) {
   .product-image-grid {
-    flex-wrap: nowrap; } }
+    flex-wrap: nowrap;
+    width: 50%; }
+  .product-main-image {
+    width: 50%; } }
 
 :root {
   --bg-color: #161616;
@@ -401,6 +404,9 @@
   flex: 4;
   margin: 0 auto;
   padding: 3rem; }
+
+.plist-center img {
+  margin: auto; }
 
 .plist-right {
   flex: 1;
@@ -581,6 +587,7 @@
   padding: 1rem; }
 
 body {
+  display: flex;
   background-color: black;
   color: var(--text-color);
   margin: 0; }
@@ -662,6 +669,7 @@ p {
 /* nav section */
 .nav {
   display: flex;
+  width: 100%;
   flex-direction: row;
   min-height: 70px;
   padding: 1rem;
