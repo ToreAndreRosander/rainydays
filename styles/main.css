@@ -260,16 +260,20 @@
   padding: 2rem;
   align-items: center; }
 
+.cart-list img {
+  height: 150px; }
+
 .cart-list-btns {
   display: flex;
   justify-content: flex-end;
   padding: 2rem;
-  align-items: center; }
+  align-items: center;
+  text-align: right; }
 
 .cart-container {
   display: flex;
   flex-direction: column;
-  margin: 3rem;
+  margin: 3rem 10rem 10rem;
   background-color: var(--bg-color); }
 
 .cart-details-container {
