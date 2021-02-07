@@ -29,12 +29,12 @@
     justify-content: space-between;
     background-color: var(--bg-color);
     color: var(--text-color);
-    padding: 2rem;
+    
     align-items: center;
 }
 
 .cart-list img {
-    height: 150px;
+    height: 120px;
 }
 
 .cart-list-btns {
@@ -55,12 +55,12 @@
 .cart-details-container {
     display: flex;
     flex-direction: column;
-    
+    width: 100%;
     background-color: var(--bg-color);
 }
 
 .cart-container div {
-    border-bottom: 1px solid var(--text-color-light);
+    border-bottom: 1px solid #4e4e4e;
 }
 
 .details-bottom {

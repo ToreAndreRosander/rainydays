@@ -14,8 +14,27 @@
 
 <body>
     <div class="flex-container">
+        <span> <a href="index.html"><img alt="rainydays logo" src="images/logo/rainydays_Logo_white_190.png"></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <span class="material-icons">
+                menu
+            </span>
+        </span>
+        <section class="nav" id="mobile-nav">
+            <a href="productlist.html">Men</a>
+           
+            <a href="productlist.html">Women</a>
+     
+           
 
-        <section class="nav">
+            <a href="productlist.html">Kids</a>
+    
+            <a href="productlist.html">Accesories</a>
+        </section>
+        
+            
+          </a>
+        <section id="nav" class="nav">
 
                 <a href="productlist.html">Men</a>
            
@@ -28,11 +47,20 @@
                 <a href="productlist.html">Accesories</a>
      
         </section>
-
+        <script>
+            function myFunction() {
+              var x = document.getElementById("mobile-nav");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+            </script>
     <section class="category-section">
        
         <div class="product-card-container">
-            <a  class="category-card1" href="./productlist.html">
+            <a class="category-card1" href="./productlist.html">
                 <div class="category-bottom">
                     <h3>Men</h3>
                 </div>
@@ -138,7 +166,7 @@
     </section>
 
     <section class="recomended-section">
-        
+
         <div class="header-title text-shadow">
             <h1>TOP RATED PRODUCTS</h1>
         </div>

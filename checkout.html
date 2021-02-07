@@ -13,7 +13,7 @@
 </head>
 <body>
 
-    <div class="details-container">
+    <div class="checkout-container">
         <section class="nav">
 
             <a href="productlist.html">Men</a>
@@ -37,30 +37,31 @@
             <form class="checkout-section-form" id="checkout-form" method="POST">
 
             <div class="checkout-col2">
+                <h2 class="product-description-title text-light">Shipping details</h2>
                 <label for="first-name">First name</label>
-                <input name="first-name" type="text">
+                <input class="checkout-input" name="first-name" type="text" placeholder="First name">
 
                 <label for="last-name">Last name</label>
-                <input name="last-name" type="text">
+                <input class="checkout-input" name="last-name" type="text" placeholder="Last name">
 
                 <label for="adress">Adress</label>
-                <input name="adress" type="text">
+                <input class="checkout-input" name="adress" type="text" placeholder="Adress">
 
                 <label for="zip">Zip code</label>
-                <input name="zip" type="number">                
+                <input class="checkout-input" name="zip" type="number" placeholder="Zipcode">                
                 
                 <label for="email">E-mail</label>
-                <input name="email" type="text">
+                <input class="checkout-input" name="email" type="text" placeholder="E-mail">
 
                 <label for="phone">Phone</label>
-                <input name="phone" type="number">
+                <input class="checkout-input" name="phone" type="number" placeholder="Phone">
             </div>
 
             <div class="checkout-col3">
+                <h2 class="product-description-title text-light">Order overview</h2>
                 <div class="checkout-product-box">
-                    <p>Vestergapen Rain coat 999,-<br>
-                    Size: M </p>
-                    <hr style="width:60%;">
+                    <img src="./images/products/vestergapet/vestergapet45-s.jpg"> <p>Vestergapen Rain coat - Size: M - 999,-</p>
+                    <hr style="width:100%;">
                     <p>Shipping: 49,-<br>
                     Total: 1048,-</p>
                 </div>
@@ -68,33 +69,46 @@
 
 
                 <div class="checkout-payment-box">
-                    <p>Payment options</p>
+                    <p class="full-width">Payment options</p>
 
                     <span class="checkout-radio">
-                    <input type="radio" id="card" name="payment" value="card">
-                    <label for="card">Card</label>
+                        <input type="radio" id="card" name="payment" value="card">
+                        <label for="card">Pay with credit card</label>
                     </span>
 
-                    <input type="radio" id="vipps" name="payment" value="vipps">
-                    <label for="vipps">Vipps</label><br>
+                    <span class="checkout-radio">
+                        <input type="radio" id="vipps" name="payment" value="vipps">
+                        <label for="vipps">Use Vipps on your phone</label>
+                    </span>
 
-                    <input type="radio" id="paypal" name="payment" value="paypal">
-                    <label for="paypal">PayPal</label>
+                    <span class="checkout-radio">
+                        <input type="radio" id="paypal" name="payment" value="paypal">
+                        <label for="paypal">Or PayPal on your computer</label>
+                    </span>
+                
                     </div>
                     <div class="checkout-payment-box">
 
-                    <p>Shipping options</p>
+                    <p class="full-width">Shipping options</p>
+                    <span class="checkout-radio">
+                        <input type="radio" id="bring" name="shipping" value="bring">
+                        <label for="bring">Bring is the best choice</label>
+                    </span>
 
-                    <input type="radio" id="bring" name="shipping" value="bring">
-                    <label for="bring">Bring</label><br>
+                    <span class="checkout-radio">
+                        <input type="radio" id="express" name="shipping" value="express">
+                        <label for="express">Express delivers next-day</label>
+                    </span>
 
-                    <input type="radio" id="pickup" name="shipping" value="pickup">
-                    <label for="pickup">Pick-up at store</label><br>
+                    <span class="checkout-radio">
+                        <input type="radio" id="pickup" name="shipping" value="pickup">
+                        <label for="pickup">Pick-up at one of our stores</label>
+                    </span>
 
 
-                    <hr style="width:60%;">
+                    <hr style="width:100%;">
 
-                    <p>Shipping: 49,-<br>
+                    <p class="full-width">Shipping: 49,-<br>
                     Total: 1048,-</p>
                 </div>
 

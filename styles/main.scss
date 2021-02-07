@@ -74,6 +74,10 @@ p {
 
 /* Re-usable text styling */ 
 
+/* right align text */
+.text-align-right {
+    text-align: right!important;
+}
 /* Adds contrast to light colored text */
 .text-shadow {
     text-shadow: -2px -1px 5px #000000;
@@ -140,6 +144,9 @@ p {
     justify-content: center;
     text-align: center;
 }
+
+
+
 
 
 
@@ -229,6 +236,10 @@ p {
 
 .material-icons.md-36 { 
     font-size: 36px; 
+}
+
+.material-icons.md-56 { 
+    font-size: 66px; 
 }
 
 .category-card2 {
@@ -750,6 +761,66 @@ p {
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.342);
 }
 
+
+/* re-usable product card detailed */
+.product-card-detailed {
+    background-color: #37737521;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+  
+    padding: 1rem 2rem;
+    margin: 0 auto 2rem;
+}
+
+.pcd-title {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pcd-left {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.pcd-center {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 3;
+    
+    padding: 1rem 0 0 1rem;
+}
+
+.pcd-right {
+    width: 15%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.pcd-bottom {
+    
+    padding: 1rem 0 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pcd-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.pcd-row-btn:hover {
+    cursor: pointer;
+}
+
 /* css for smaller screens */
 
 @media only screen and (max-width: 1042px) {
@@ -828,6 +899,55 @@ p {
 
 @media only screen and (max-width: 799px) {
 
+    /*Hamburger menu*/
+
+    /* Mobile nav */
+
+    .nav {
+        display: none;
+    }
+/* Style the navigation menu */
+.mobile-nav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .mobile-nav {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .mobile-nav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .mobile-nav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .mobile-nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
     .header-title {
         min-width: 70%;
 
@@ -895,9 +1015,7 @@ p {
     
     /* Footer responsivnes */
 
-    .footer-child-left {
-      /*  width: 100%; */
-    }
+ 
 
     .footer-child-right {
         width: 100%;
@@ -910,6 +1028,17 @@ p {
 }
 
 @media only screen and (max-width: 679px) {
+
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--text-color);
+        letter-spacing: 1.6px;
+        margin-block-start: 0.5rem;
+        margin-block-end: 0.5rem;
+    }
+
     .header-title {
         min-width: 50%;
 
@@ -957,67 +1086,12 @@ p {
     padding: 0;
     
 }
-}
-
-
-
-
-
-/* re-usable product card detailed */
-.product-card-detailed {
-    background-color: #37737521;
-    color: black;
-    display: flex;
-    flex-wrap: wrap;
-  
-    padding: 1rem 2rem;
-    margin: 0 auto 2rem;
-}
-
-.pcd-title {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.pcd-left {
-    display: flex;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-}
 
 .pcd-center {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex: 3;
-    
-    padding: 1rem 0 0 1rem;
+    padding: 0;
 }
-
-.pcd-right {
-    width: 15%;
-    padding: 1rem;
-    text-align: center;
-}
-
-.pcd-bottom {
-    
-    padding: 1rem 0 0;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.pcd-row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
 }
 
 
 
-.pcd-row-btn:hover {
-    cursor: pointer;
-}
+

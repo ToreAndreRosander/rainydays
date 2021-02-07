@@ -21,7 +21,40 @@
 
     --white: #ffffff;
 
+    --form-placeholder-light: #7e7e7e;
 
+}
+
+/* form input experiment */
+  
+  .checkout-input {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid var(--white);
+    outline: 0;
+    font-size: 1.3rem;
+    color: var(--white);
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  
+
+  .checkout-input:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, var(--main-color),var(--main-color-h));
+    border-image-slice: 1;
+  }
+
+
+
+.checkout-container {
+    display: flex;
+    flex-direction: column ;
+    background-color: var(--bg-color);
 }
 
 .checkout-section {
@@ -35,6 +68,7 @@
     display: flex;
     width: 100%;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .checkout-col1 {
@@ -48,7 +82,7 @@
 .checkout-col2 {
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 40%;
     padding: 1rem;
 
 }
@@ -56,9 +90,13 @@
 .checkout-col3 {
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 40%;
     padding: 1rem;
 
+}
+
+.checkout-col3 a {
+    margin-top: 3rem;
 }
 
 .checkout-col2 input[type="text"] {
@@ -73,22 +111,69 @@
 
 .checkout-col2 label {
     margin-bottom: 1rem;
-    
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color-light);
+    letter-spacing: 4px;
+    margin-block-start: 0.5rem;
 }
 
+.checkout-radio {
+    width: 33.33%;
+}
 
 .checkout-payment-box {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     border: 1px solid var(--text-color-light);
-    padding: 1rem;
+    
 }
+
+.checkout-payment-box p {
+    text-align: center;
+}
+
+.checkout-payment-box input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+  }
+
+.checkout-payment-box label {
+        display: inline-block;
+        background-color: var(--bg-color);
+        padding: 10px 20px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        border-top: 2px solid var(--form-placeholder-light);
+        border-right: 2px solid var(--form-placeholder-light);
+        
+        cursor: pointer;
+}
+
+.checkout-payment-box input[type="radio"]:checked + label {
+    background-color:var(--main-color-confirm);
+}
+
+.checkout-payment-box input[type="radio"]:focus + label {
+    border: 2px solid var(--main-color-confirm);
+}
+
+.checkout-payment-box label:hover {
+    background-color: var(--main-color);
+  }
 
 
 
 .checkout-product-box {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     border: 1px solid var(--text-color-light);
     padding: 1rem;
+}
+
+.checkout-product-box img {
+    height: 120px;
+    margin: auto;
 }

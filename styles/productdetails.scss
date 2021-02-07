@@ -25,17 +25,17 @@
 /* Font styling*/
 
 .product-details-title {
-    width: 100%;
+    width: 70%;
     font-family: 'Roboto', sans-serif;
     font-size: 26px;
     font-weight: 400;
-    color: var(--text-color);
+    color: var(--text-color-light);
     letter-spacing: 4px;
     margin-block-start: 0.5rem;
 }
 
 .product-details-price {
-    width: 100%;
+    
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
     font-weight: 400;
@@ -43,6 +43,26 @@
     letter-spacing: 4px;
     margin-block-start: 0.5rem;
 }
+
+.product-description-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--text-color-dark);
+    letter-spacing: 4px;
+    margin-block-start: 0.5rem;
+}
+
+.product-description-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text-color-dark);
+    letter-spacing: 4px;
+    margin-block-start: 0.5rem;
+}
+
+/* top container */
 
 .details-top {
     display: flex;
@@ -101,7 +121,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 1rem 2rem;
-    width: 45%;
+    width: 43%;
     order: 2;
 }
 
@@ -127,8 +147,8 @@
 }
 
 .product-image-grid div img {
-    margin: 0 auto;
-    padding: 0 1rem;
+    margin: auto;
+
     height: 170px;
 
 }

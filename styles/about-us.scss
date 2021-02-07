@@ -21,7 +21,9 @@
 
     --white: #ffffff;
 }
-
+.about-container {
+    background-color: var(--bg-color);
+}
 .about-us {
     display: flex;
     flex-direction: column;

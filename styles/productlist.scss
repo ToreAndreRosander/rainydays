@@ -78,9 +78,26 @@
 }
 
 @media only screen and (max-width: 679px) {
+
+
 .plist-center {
     flex: 1;
     margin: 0;
     padding: 0;
 }
+
+.plist-container {
+
+    width: 100%;;
+    padding: 0;
+}
+
+.plist-hero-sub {
+    padding: 2rem 0;
+    width: 100%;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
 }
