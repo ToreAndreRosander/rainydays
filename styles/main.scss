@@ -29,6 +29,8 @@
 @import 'styles/productlist';
 @import 'styles/about-us';
 @import 'styles/support';
+@import 'styles/checkout';
+
 body {
     background-color: black;
     color: var(--text-color);
@@ -946,6 +948,12 @@ p {
     
     margin: 0;
     text-align: center;
+}
+
+.product-card-detailed {
+
+    padding: 0;
+    
 }
 }
 

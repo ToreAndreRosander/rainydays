@@ -28,36 +28,86 @@
 
         </section>
 
-        <section class="contact-us">
-            <h1>Checkout Order #34</h1>
-            <p>Get in touch with us with one of the following options:</p>
-            <div class="contact-options">
-                <div class="contact-phone">Phone</div>
-                <div class="contact-chat">Chat</div>
-                <div class="contact-email">Email</div>
-                
-            <form id="contact-form" class="contact-form" method="POST">
+        <section class="checkout-section">
+            <div class="checkout-col1">
+                <h1>Checkout Order #34</h1>
+                <p>Enter you information in the form below to complete your purchase:</p>
+            </div>
+
+            <form class="checkout-section-form" id="checkout-form" method="POST">
+
+            <div class="checkout-col2">
                 <label for="first-name">First name</label>
                 <input name="first-name" type="text">
 
                 <label for="last-name">Last name</label>
                 <input name="last-name" type="text">
 
-                <label for="phone">Phone</label>
-                <input name="phone" type="number">
+                <label for="adress">Adress</label>
+                <input name="adress" type="text">
 
+                <label for="zip">Zip code</label>
+                <input name="zip" type="number">                
+                
                 <label for="email">E-mail</label>
                 <input name="email" type="text">
 
-                <label for="message">Message</label>
-                <textarea name="message"></textarea>
+                <label for="phone">Phone</label>
+                <input name="phone" type="number">
+            </div>
 
-            </form>
-        </section>
+            <div class="checkout-col3">
+                <div class="checkout-product-box">
+                    <p>Vestergapen Rain coat 999,-<br>
+                    Size: M </p>
+                    <hr style="width:60%;">
+                    <p>Shipping: 49,-<br>
+                    Total: 1048,-</p>
+                </div>
+    
+
+
+                <div class="checkout-payment-box">
+                    <p>Payment options</p>
+
+                    <span class="checkout-radio">
+                    <input type="radio" id="card" name="payment" value="card">
+                    <label for="card">Card</label>
+                    </span>
+
+                    <input type="radio" id="vipps" name="payment" value="vipps">
+                    <label for="vipps">Vipps</label><br>
+
+                    <input type="radio" id="paypal" name="payment" value="paypal">
+                    <label for="paypal">PayPal</label>
+                    </div>
+                    <div class="checkout-payment-box">
+
+                    <p>Shipping options</p>
+
+                    <input type="radio" id="bring" name="shipping" value="bring">
+                    <label for="bring">Bring</label><br>
+
+                    <input type="radio" id="pickup" name="shipping" value="pickup">
+                    <label for="pickup">Pick-up at store</label><br>
+
+
+                    <hr style="width:60%;">
+
+                    <p>Shipping: 49,-<br>
+                    Total: 1048,-</p>
+                </div>
+
+                <a href="./success.html" class="button-wide">Confirm order</a>
+            </div>
+
+        </div>
+        </form>
+    </section>
 
 
 
-    </div>
+</div>
 </body>
 
 </html>

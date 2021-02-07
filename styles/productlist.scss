@@ -72,3 +72,11 @@
     flex: 1;
     margin: 3rem auto;
 }
+
+@media only screen and (max-width: 679px) {
+.plist-center {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+}
