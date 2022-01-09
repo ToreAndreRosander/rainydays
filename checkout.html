@@ -55,24 +55,47 @@
             <form class="checkout-section-form" id="checkout-form" method="POST">
 
             <div class="checkout-col2">
-                <h2 class="product-description-title text-light">Shipping details</h2>
+                <h2 class="product-description-title text-darker">Shipping details</h2>
                 <label for="first-name">First name</label>
-                <input class="checkout-input" name="first-name" type="text" placeholder="First name">
+                <span class="form-notice" id="firstnameError">
+                    Enter a first name (minimum 2 characters).
+                </span>
+                <input class="checkout-input" id="firstname" name="first-name" type="text" placeholder="First name">
+
 
                 <label for="last-name">Last name</label>
-                <input class="checkout-input" name="last-name" type="text" placeholder="Last name">
+                <span class="form-notice" id="lastnameError">
+                    Enter a last name (minimum 2 characters).
+                </span>
+                <input class="checkout-input" name="last-name" id="lastname" type="text" placeholder="Last name">
+
 
                 <label for="adress">Adress</label>
-                <input class="checkout-input" name="adress" type="text" placeholder="Adress">
+
+                <span class="form-notice" id="addressError">
+                    Enter a valid address (minimum 2 characters).
+                </span>
+                <input class="checkout-input" name="address" id="address" type="text" placeholder="Address">
 
                 <label for="zip">Zip code</label>
-                <input class="checkout-input" name="zip" type="number" placeholder="Zipcode">                
                 
+                <span class="form-notice" id="zipError">
+                    Enter a zipcode (4 numbers eg. 1232).
+                </span>              
+                <input class="checkout-input" name="zip" id="zip" type="number" placeholder="Zipcode">
                 <label for="email">E-mail</label>
-                <input class="checkout-input" name="email" type="text" placeholder="E-mail">
+                <span class="form-notice" id="emailError">
+                    Enter a valid email address (eg. user@example.com).
+                </span>
+
+                <input class="checkout-input" name="email" id="email" type="text" placeholder="E-mail">
 
                 <label for="phone">Phone</label>
-                <input class="checkout-input" name="phone" type="number" placeholder="Phone">
+                <span class="form-notice" id="phoneError">
+                    Enter a valid phone number (8 characters eg. 99944777).
+                </span>
+                <input class="checkout-input" name="phone" id="phone" type="number" placeholder="Phone">
+
             </div>
 
             <div class="checkout-col3">
@@ -90,7 +113,7 @@
                     <p class="full-width">Payment options</p>
 
                     <span class="checkout-radio">
-                        <input type="radio" id="card" name="payment" value="card">
+                        <input type="radio" id="card" name="payment" value="card" checked>
                         <label for="card">Pay with credit card</label>
                     </span>
 
@@ -109,7 +132,7 @@
 
                     <p class="full-width">Shipping options</p>
                     <span class="checkout-radio">
-                        <input type="radio" id="bring" name="shipping" value="bring">
+                        <input type="radio" id="bring" name="shipping" value="bring" checked>
                         <label for="bring">Bring is the best choice</label>
                     </span>
 
@@ -124,9 +147,9 @@
                     </span>
 
 
-                    <hr style="width:100%;">
 
-                    <p class="full-width">Shipping: 49,-<br>
+
+                    <p class="full-width padding-all-1">Shipping: 49,-<br>
                     Total: 1048,-</p>
                 </div>
 
@@ -190,6 +213,7 @@
 
 </div>
 <script src="js/main.js"></script>
+<script src="js/validatecart.js"></script>
 </body>
 
 </html>

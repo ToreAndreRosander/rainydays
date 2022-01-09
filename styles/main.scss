@@ -12,13 +12,16 @@
     --extra-color-1: #377375;
     --extra-color-1-h: #377375;
 
+    --extra-color-2: #f1f1f1;
+    --extra-color-2-h: #d4d4d4;
+
     --text-color: #EEEEEE;
     --text-color-light: #EEEEEE;
     --text-color-dark: #292929;
 
     --link-color: #EEEEEE;
     --link-color-h: #377375;
-
+    --dark: #2b2b2b;
     --white: #ffffff;
 }
 
@@ -74,6 +77,11 @@ p {
 
 /* Re-usable text styling */ 
 
+.clear-link {
+    text-decoration: none!important;
+  }
+
+
 /* right align text */
 .text-align-right {
     text-align: right!important;
@@ -91,6 +99,11 @@ p {
 /* dark text */
 .text-dark {
     color: var(--text-color-dark);
+}
+
+/* darker text */
+.text-darker {
+    color: var(--text-color-darkerB);
 }
 
 /* narrow letter spacing*/
@@ -114,6 +127,10 @@ p {
     width: 100%;
 }
 
+.padding-all-1 {
+    padding: 1rem;
+}
+
 /* blur effect for image overlay */
 .blur {
     -webkit-filter: blur(2px);
@@ -123,11 +140,17 @@ p {
     filter: blur(2px);    
 }
 
+/* hide error messages for forms */
+.form-notice {
+    color: red;
+    display: none;
+}
+
 /* Main flex container */
 
 .flex-container {
     display: flex;
-    width: 100%;
+  
     flex-direction: column;
 }
 
@@ -135,7 +158,7 @@ p {
 
 .nav {
     display: flex;
-    width: 100%;
+  
     flex-direction: row;
     min-height: 70px;
     padding: 1rem;
@@ -251,6 +274,26 @@ p {
 .cs-child {
     padding: 1rem;
     margin: auto;
+}
+
+/* CTA section */
+.cta-section {
+    display: flex;
+
+
+    
+    padding: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 0 0 0;
+    background-color: var(--main-color);
+
+
+}
+
+.cta-text {
+    width: 90%;
+    text-align: center;
 }
 
 /* Featured frontpage section */
@@ -382,7 +425,7 @@ p {
 /* Header for several of the frontpage sections */
 
 .header-title {
-    min-width: 100%;
+    width: 80%;
     padding: 3rem;
     text-align: center;
 }
@@ -489,21 +532,26 @@ p {
 /* orange cta button */
 
 .button-wide-cta {
+    display: flex;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 400;
     min-width: 250px;
     min-height: 50px;
-    background-color: var(--extra-color-1);
-    color: var(--text-color);
+    background-color: var(--extra-color-2);
+    color: var(--text-color-darker);
     margin: 1rem;
     cursor: pointer;
     border: 0;
-    text-shadow: 1px 1px 5px black;
+   
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
 .button-wide-cta:hover {
-    background-color: var(--extra-color-1-h);
+    background-color: var(--extra-color-2-h);
     box-shadow: 2px 2px 5px black;
 }
 
@@ -833,6 +881,10 @@ p {
 
 @media only screen and (max-width: 799px) {
 
+    h1 {
+        font-size: 35px;
+    }
+
     /*Hamburger menu*/
 
     .mobile-nav {
@@ -924,7 +976,10 @@ p {
 
     
     /* Footer responsivnes */
-
+    .footer-child-left {
+        min-width: 80%;
+        text-align: left;
+    }
  
 
     .footer-child-right {
