@@ -1,22 +1,22 @@
-function startTimer(duration, display) {
-    var timer = duration, minutes, seconds;
+function startCtaTimer(duration, countdown) {
+    var ctaTimer = duration, ctaMinutes, ctaSeconds;
     setInterval(function () {
-        minutes = parseInt(timer / 60, 10);
-        seconds = parseInt(timer % 60, 10);
+        ctaMinutes = parseInt(ctaTimer / 60, 10);
+        ctaMinutes = ctaMinutes < 10 ? "0" + ctaMinutes : ctaMinutes;
 
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
+        ctaSeconds = parseInt(ctaTimer % 60, 10);
+        ctaSeconds = ctaSeconds < 10 ? "0" + ctaSeconds : ctaSeconds;
 
-        display.textContent = minutes + ":" + seconds;
+        countdown.textContent = ctaMinutes + ":" + ctaSeconds;
 
-        if (--timer < 0) {
-            timer = duration;
+        if (--ctaTimer < 0) {
+            ctaTimer = duration;
         }
     }, 1000);
 }
 
 window.onload = function () {
-    var fiveMinutes = 60 * 5,
-        display = document.querySelector('#time');
-    startTimer(fiveMinutes, display);
+    var countMinutes = 60 * 34,
+    countdown = document.querySelector('#cta-time');
+    startCtaTimer(countMinutes, countdown);
 };
