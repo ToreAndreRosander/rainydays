@@ -3,8 +3,7 @@
 const formId = document.querySelector("#contact-form");
 const formName = document.querySelector("#name");
 const formNameError = document.querySelector("#nameError");
-const formAddress = document.querySelector("#address");
-const formAddressError = document.querySelector("#addressError");
+
 const formSubject = document.querySelector("#subject");
 const formSubjectError = document.querySelector("#subjectError");
 const formEmail = document.querySelector("#email");
@@ -18,25 +17,20 @@ function validateContactForm() {
   // Error counter to check if any errors before submit
   let errors = 0;
 
-  if (inputCheck(formName.value, 1) === true) {
+  if (inputCheck(formName.value, 2) === true) {
     formNameError.style.display = "none";
   } else {
     formNameError.style.display = "block";
     errors++;
   }
-  if (inputCheck(formAddress.value, 25) === true) {
-    formAddressError.style.display = "none";
-  } else {
-    formAddressError.style.display = "block";
-    errors++;
-  }
+
   if (emailCheck(formEmail.value) === true) {
     formEmailError.style.display = "none";
   } else {
     formEmailError.style.display = "block";
     errors++;
   }
-  if (inputCheck(formSubject.value, 10) === true) {
+  if (inputCheck(formSubject.value, 25) === true) {
     formSubjectError.style.display = "none";
   } else {
     formSubjectError.style.display = "block";
@@ -46,6 +40,9 @@ function validateContactForm() {
   // Display submit success message if there are no validation errors
   if(errors == 0 ) {
     formSuccess.style.display = "block";
+    formName.value = '';
+    formSubject.value = '';
+    formEmail.value = '';
   } else {
     // Reset the error counter so it is ready for a new check when the user press "submit"
     errors = 0;

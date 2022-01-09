@@ -672,6 +672,12 @@ p {
   color: red;
   display: none; }
 
+#success {
+  display: none; }
+
+.confirm-green {
+  color: var(--main-color-confirm) !important; }
+
 /* Main flex container */
 .flex-container {
   display: flex;

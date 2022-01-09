@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width">
-    <title>Rainydays - Product details</title>
+    <title>Rainydays - Customer service</title>
   
     <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -74,22 +74,27 @@
                     <a href="#">Google maps</a></p></div>
             </div>
             <h2>Or use our contact form below</h2>
+            <span id="success"><h2 class="confirm-green">Your form was submitted!</h2></span>
             <form id="contact-form" class="contact-form" method="POST">
-                <label for="first-name">First name</label>
-                <input class="checkout-input" name="first-name" type="text" placeholder="First name">
-
-                <label for="last-name">Last name</label>
-                <input class="checkout-input" name="last-name" type="text" placeholder="Last name">         
+                <label for="name">Name</label>
+                <span class="form-notice" id="nameError">
+                    Enter a first name (minimum 2 characters).
+                </span>
+                <input class="checkout-input" name="name" type="text" placeholder="Name" id="name">      
                 
                 <label for="email">E-mail</label>
-                <input class="checkout-input" name="email" type="text" placeholder="E-mail">
+                <span class="form-notice" id="emailError">
+                    Enter a valid email address (eg. user@example.com).
+                </span>
+                <input class="checkout-input" name="email" type="text" placeholder="E-mail" id="email">
 
-                <label for="phone">Phone</label>
-                <input class="checkout-input" name="phone" type="number" placeholder="Phone">
+                <label for="subject">Message</label>
+                <span class="form-notice" id="subjectError">
+                    Enter a subject (minimum 25 characters).
+                </span>
+                <textarea class="checkout-input" name="subject" id="subject"></textarea>
 
-                <label for="message">Message</label>
-                <textarea class="checkout-input" name="message"></textarea>
-
+                <input type="submit" class="button-wide" value="Submit" id="sumbit">
             </form>
         </section>
 
@@ -146,6 +151,7 @@
         </section>
     </div>
     <script src="js/main.js"></script>
+    <script src="js/validatecontactform.js"></script>
 </body>
 
 </html>
