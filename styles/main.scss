@@ -444,6 +444,7 @@ p {
 .product-card-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .product-card {
@@ -801,6 +802,11 @@ p {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+
+.product-image {
+    max-width: 250px;
+    max-height: 375px;
 }
 
 .mobile-nav {

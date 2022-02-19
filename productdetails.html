@@ -16,15 +16,15 @@
     <div class="details-container">
         <section id="nav" class="nav">
 
-            <a href="productlist.html">Men</a>
+            <a href="productlist.html?id=16">Men</a>
        
-            <a href="productlist.html">Women</a>
+            <a href="productlist.html?id=16">Women</a>
      
             <a href="index.html" id="mobile-menu-logo"><img alt="rainydays logo" src="images/logo/rainydays_Logo_white_190.png"></a>
 
-            <a href="productlist.html">Kids</a>
+            <a href="productlist.html?id=16">Kids</a>
     
-            <a href="productlist.html">Accesories</a>
+            <a href="productlist.html?id=16">Accesories</a>
 
             <a href="#" onclick="displayhamburger()" id="mobile-menu-icon"><span class="material-icons">
                 menu</span>
@@ -35,13 +35,13 @@
     <section class="nav mobile-nav" id="mobile-nav">
         <a href="./index.html">Home</a>
 
-        <a href="productlist.html">Men</a>
+        <a href="productlist.html?id=16">Men</a>
        
-        <a href="productlist.html">Women</a>
+        <a href="productlist.html?id=16">Women</a>
 
-        <a href="productlist.html">Kids</a>
+        <a href="productlist.html?id=16">Kids</a>
 
-        <a href="productlist.html">Accesories</a>
+        <a href="productlist.html?id=16">Accesories</a>
 
         <a href="./customerservice.html">Customer support</a>
     </section>
@@ -50,24 +50,19 @@
 
             <div class="image-container">
                 <div class="product-image-grid">
-                    <div>
-                        <img src="images/products/vestergapet/vestergapet3-s.jpg" onclick="changeimage(this)">
-                        <img src="images/products/vestergapet/vestergapet4-s.jpg" onclick="changeimage(this)">
-                    </div>
-                    <div>
-                        <img src="images/products/vestergapet/vestergapet3-s.jpg" onclick="changeimage(this)">
-                        <img src="images/products/vestergapet/vestergapet10216160013_7-s.jpg" onclick="changeimage(this)">
+                    <div id="prod-gallery">
+                        
                     </div>
                 </div>
-                <div class="product-main-image">
-                    <img id="main-image" src="images/products/vestergapet/vestergapet45-s.jpg">
+                <div class="product-main-image" id="prod-main-image">
+                    Loading
                 </div>
             </div>
 
             <div class="details-options">
-                <h1 class="product-details-title text-less-margin">Vestergapet rain coat</h1><h2 class="product-details-price"><span id="price4">999</span>,- NOK</h2>
-                <p>Vestergapet raincoat is our top model in rainwear, and is made of solid and strong SuperProof material. 
-                    </p>
+                <h1 class="product-details-title text-less-margin" id="prod-name">Loading</h1><h2 class="product-details-price" id="prod-price"></h2>
+                <span id="prod-short-description">Loading
+                </span>
                     <div id="purchase-header" class="purchase-header">
                         <div class="size-container">
                             <span class="size-span">M</span>
@@ -81,14 +76,12 @@
                             <p id="amount4">1</p>
                             <span class="details-amount" id="plus4" onclick="change(this)">+</span>
         
-                            <p><span id="total4">999</span>,-</p>
+                            <p><span id="total4">0</span>,-</p>
                             <form action="./shoppingcart.html"><button name="submit" class="button">Add to cart</button></form>
                         </div>
                     </div>
-                
             </div>
 
-            
         </section>
         <section id="purchase-header-mobile" class="purchase-header-mobile">
             <div class="size-container">
@@ -96,14 +89,13 @@
                 <span class="size-span">XL</span>
                 <span class="size-span">XXL</span>
             </div>
-           
-            
+
             <div id="5" class="add-product">
                 <span class="details-amount" id="minus5" onclick="change(this)">-</span>
-                <p id="amount5">1</p>
+                <p id="amount5">0</p>
                 <span class="details-amount" id="plus5" onclick="change(this)">+</span>
 
-                <p><span id="total5">999</span>,- NOK</p>
+                <p><span id="total5">0</span>,- NOK</p>
                 <form action="./shoppingcart.html"><button name="submit" class="button">Add to cart</button></form>
             </div>
         </section>
@@ -111,32 +103,11 @@
 
             <section class="product-description">
                 <h2 class="product-description-title">Product description</h2>
-                <p>Vestergapet raincoat is our top model in rainwear, and is made of solid and strong SuperProof material. 
-                    This is our best rainwear that keeps the water out even during extreme rainy weather. 
-                    Vestergapet has welded seams, reflector and double storm flap that protects the zipper.</p><br>
-                <h3 class="product-description-subtitle">Durable</h3>
-                <p>Vestergapet raincoat is our top model in rainwear, and is made of solid and strong SuperProof material. 
-                    This is our best rainwear that keeps the water out even during extreme rainy weather. 
-                    Vestergapet has welded seams, reflector and double storm flap that protects the zipper.</p><br>
-
-                <h3 class="product-description-subtitle">Waterproof</h3>
-                <p>Vestergapet raincoat is our top model in rainwear, and is made of solid and strong SuperProof material. 
-                    This is our best rainwear that keeps the water out even during extreme rainy weather. 
-                    Vestergapet has welded seams, reflector and double storm flap that protects the zipper.</p>
-            </section>
-            
-            <section class="product-feedback">
-                <h2 class="product-description-title">Technical</h2>
-                <p><span class="material-icons md-26 ">ac_unit</span> Isolating</p>
-                <p><span class="material-icons md-26 ">opacity</span> Waterproof</p>
-                <p><span class="material-icons md-26 ">eco</span> Ecofriendly</p>
-
+                <span id="prod-description">Loading</span>
             </section>
 
         </section>
         <section class="footer-section">
-
-
 
             <div class="footer-child-left">
                 <h3>Usefull links</h3>
@@ -161,7 +132,7 @@
                     <img alt="Image by Jakub kriz" src="./images/instagram/instashots5-s.jpg">
                     <img alt="Image by Jonny Caspari" src="./images/instagram/instashots6-s.jpg">
                 </div>
-    
+
             </div>
     
             <div class="footer-child-right text-shadow">
@@ -175,19 +146,21 @@
                     weather and we guarantee that our
                     products will satisfy our customers</p>
                     <a class="footer-link" href="./about.html">Read more</a>
-    
+
             </div>
-    
+
             <div class="footer-child-bottom text-shadow">
                 
                 <p>Company information phone 999 33 222 email@rainydays.com</p>
-    
+
             </div>
         </section>
     </div>
     <script src="js/cart.js"></script>
     <script src="js/productdetails.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/api.js"></script>
+    <script>getProductDetails();</script>
 </body>
 
 </html>

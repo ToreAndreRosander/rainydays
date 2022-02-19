@@ -4,62 +4,55 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rainydays webshop</title>
-  
     <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  
 </head>
 
 <body>
     <div class="flex-container">
             
         <section id="nav" class="nav">
-
-                <a href="productlist.html">Men</a>
+                <a href="productlist.html?id=16">Men</a>
            
-                <a href="productlist.html">Women</a>
+                <a href="productlist.html?id=16">Women</a>
          
                 <a href="index.html" id="mobile-menu-logo"><img alt="rainydays logo" src="images/logo/rainydays_Logo_white_190.png"></a>
    
-                <a href="productlist.html">Kids</a>
+                <a href="productlist.html?id=16">Kids</a>
         
-                <a href="productlist.html">Accesories</a>
+                <a href="productlist.html?id=16">Accesories</a>
 
                 <a href="#" onclick="displayhamburger()" id="mobile-menu-icon"><span class="material-icons">
                     menu</span>
                 </a>
-     
         </section>            
      
         <section class="nav mobile-nav" id="mobile-nav">
             <a href="./index.html">Home</a>
 
-            <a href="productlist.html">Men</a>
+            <a href="productlist.html?id=16">Men</a>
            
-            <a href="productlist.html">Women</a>
+            <a href="productlist.html?id=16">Women</a>
 
-            <a href="productlist.html">Kids</a>
+            <a href="productlist.html?id=16">Kids</a>
     
-            <a href="productlist.html">Accesories</a>
+            <a href="productlist.html?id=16">Accesories</a>
 
             <a href="./customerservice.html">Customer support</a>
         </section>
         
-            
-          
-
     <section class="category-section">
        
         <div class="product-card-container">
-            <a class="category-card1 category-card" href="./productlist.html">
+            <a class="category-card1 category-card" href="./productlist.html?id=16">
                 <div class="category-bottom">
                     <h3>Men</h3>
                 </div>
           
             </a>
-            <a href="./productlist.html" class="category-card2 category-card">
+            <a href="./productlist.html?id=16" class="category-card2 category-card">
                 <div class="category-bottom">
                     <h3>Women</h3>
                 </div>
@@ -67,21 +60,19 @@
         </div>
 
         <div class="product-card-container">
-            <a href="./productlist.html" class="category-card3 category-card">
+            <a href="./productlist.html?id=16" class="category-card3 category-card">
                 <div class="category-bottom">
                     <h3>kids</h3>
                 </div>
             </a>
 
-            <a href="./productlist.html" class="category-card4 category-card">
+            <a href="./productlist.html?id=16" class="category-card4 category-card">
                 <div class="category-bottom">
                     <h3>Accesories</h3>
                 </div>
             </a>
         </div>
     </section>
-
-
 
     <section class="featured-section-selected">
 
@@ -124,7 +115,7 @@
                 </a>
         </div>
 
-        <div class="product-card-container">
+    <!--    <div class="product-card-container">
 
             <a href="./productdetails.html" class="product-card">
         
@@ -158,6 +149,7 @@
                 <h3>499,-</h3>
             </a>
         </div>
+        -->
     </section>
 
     <section class="cta-section">
@@ -205,8 +197,6 @@
             </div>
 
         </div>
-
-
     </section>
 
     <section class="featured-section-new">
@@ -215,7 +205,7 @@
             <h1>NEW ARRIVALS</h1>
         </div>
 
-        <div class="product-card-container">
+        <div class="product-card-container" id="new-products">
 
             <a href="./productdetails.html" class="product-card">
 
@@ -249,41 +239,7 @@
                     <h3>399,-</h3>
                 </a>
         </div>
-
-        <div class="product-card-container">
-
-            <a href="./productdetails.html" class="product-card">
         
-                    <img alt="Reine jakke" src="images/reine-detachable-sleeve-jacket.png">
-             
-                    <div class="star-container">
-                        <span class="material-icons">star</span>                        
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>                           
-                        <span class="material-icons">star</span>                  
-                        <span class="material-icons">star</span>
-                    </div>
-
-                    <p>Reine</p>
-                    <h3>299,-</h3>
-                </a>
-
-            <a href="./productdetails.html" class="product-card">
-
-                <img alt="Trysil jacket" src="images/trysil-png.png">
-
-                <div class="star-container">
-                    <span class="material-icons">star</span>               
-                    <span class="material-icons">star</span>
-                    <span class="material-icons">star</span>                           
-                    <span class="material-icons">star</span>                   
-                    <span class="material-icons">star</span>
-                </div>
-
-                <p>Trysil</p>
-                <h3>499,-</h3>
-            </a>
-        </div>
     </section>
 
     <section id="showcase" class="showcase-section">
@@ -354,8 +310,6 @@
 
     <section class="footer-section">
 
-
-
         <div class="footer-child-left">
             <h3>Usefull links</h3>
             <p>Highly durable waterproof membrane ensures breathable protection against any weather</p>
@@ -417,6 +371,8 @@
 <script src="js/main.js"></script>
 <script src="js/ctacountdown.js"></script>
 <script src="js/api.js"></script>
+<script>getSelectedProducts(4);
+        getNewProducts(4);</script>
 </body>
 
 </html>
