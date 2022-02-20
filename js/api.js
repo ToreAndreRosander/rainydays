@@ -1,5 +1,5 @@
 
-// API key and url
+// API key, secret and url
 const apiKey = "ck_3144b80646ee1c321ffdb089765b5754e8933ab5";
 const apiSecret = "cs_6bc4eb5fd34d98e8825e715f9bf8e3e7d7c0cbb5";
 const apiURL = "https://rosander.no/rainydays-backend/wp-json/wc/v3/";
@@ -137,38 +137,43 @@ async function getProductDetails() {
 
     const urlString = window.location.search;
     const urlParams = new URLSearchParams(urlString);
+    const idParameter = urlParams.get('id');
 
-    const idParameter = urlParams.get('id')
+    // Chek if the product id is set in the url
+    if(idParameter) {
 
-    let apiURL = "https://rosander.no/rainydays-backend/wp-json/wc/v3/products/" + idParameter + "/?consumer_key=" + apiKey + "&consumer_secret=" + apiSecret;
-    let resultContainer = document.getElementById("prod-description");
-    let galleryContainer = document.getElementById("prod-gallery");
-    let imageContainer = document.getElementById("prod-main-image");
-    let descriptionContainer = document.getElementById("prod-description");
-    let priceContainer = document.getElementById("prod-price");
-    let priceContainerTotal = document.getElementById("total4");
-    let shortDescriptionContainer = document.getElementById("prod-short-description");
-    let nameContainer = document.getElementById("prod-name");
+        let apiURL = "https://rosander.no/rainydays-backend/wp-json/wc/v3/products/" + idParameter + "/?consumer_key=" + apiKey + "&consumer_secret=" + apiSecret;
+        let resultContainer = document.getElementById("prod-description");
+        let galleryContainer = document.getElementById("prod-gallery");
+        let imageContainer = document.getElementById("prod-main-image");
+        let descriptionContainer = document.getElementById("prod-description");
+        let priceContainer = document.getElementById("prod-price");
+        let priceContainerTotal = document.getElementById("total4");
+        let shortDescriptionContainer = document.getElementById("prod-short-description");
+        let nameContainer = document.getElementById("prod-name");
 
-    try {
-        const response = await fetch(apiURL);
-        const data = await response.json();
-        const apiResponse = data;
-        
-        nameContainer.innerHTML = apiResponse.name;
-        descriptionContainer.innerHTML = apiResponse.description;
-        priceContainer.innerHTML = `<span id="price4">${apiResponse.price}</span>,- NOK`;
-        priceContainerTotal.innerHTML = apiResponse.price;
-        shortDescriptionContainer.innerHTML = apiResponse.short_description;
+        try {
+            const response = await fetch(apiURL);
+            const data = await response.json();
+            const apiResponse = data;
+            
+            nameContainer.innerHTML = apiResponse.name;
+            descriptionContainer.innerHTML = apiResponse.description;
+            priceContainer.innerHTML = `<span id="price4">${apiResponse.price}</span>,- NOK`;
+            priceContainerTotal.innerHTML = apiResponse.price;
+            shortDescriptionContainer.innerHTML = apiResponse.short_description;
+            imageContainer.innerHTML = `<img class="product-image" id="main-image" alt="${apiResponse.images[0].alt}" src="${apiResponse.images[0].src}">`;
+            descriptionContainer.innerHTML = apiResponse.description;
 
-        for (let i = 0; i < apiResponse.images.length; i++) {
-            galleryContainer.innerHTML += `<img src="${apiResponse.images[i].src}" alt="${apiResponse.images[i].alt}" onclick="changeimage(this)">`;
+            for (let i = 0; i < apiResponse.images.length; i++) {
+                galleryContainer.innerHTML += `<img src="${apiResponse.images[i].src}" alt="${apiResponse.images[i].alt}" onclick="changeimage(this)">`;
+            }
+
+        } catch (error) {
+            resultContainer.innerHTML = "Sorry, an error occurred!";
         }
-        imageContainer.innerHTML = `<img class="product-image" id="main-image" alt="${apiResponse.images[0].alt}" src="${apiResponse.images[0].src}">`;
-        descriptionContainer.innerHTML = apiResponse.description;
-
-    } catch (error) {
-        resultContainer.innerHTML = "Sorry, an error occurred!";
+    } else {
+        window.location.href="./index.html";
     }
 
 }
@@ -177,59 +182,64 @@ async function getProductDetails() {
 async function getCategory() {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-
     const idParameter = urlParams.get('id')
 
-    let catApiURL = "https://rosander.no/rainydays-backend/wp-json/wc/v3/products/?category=" + idParameter + "&consumer_key=" + apiKey + "&consumer_secret=" + apiSecret;
-    let productCard = document.getElementById("cat-products");
-    // let categoryName = document.getElementById("cat-name");
-
-    try {
-        const response = await fetch(catApiURL);
-        const data = await response.json();
-        const apiResponse = data;
+    // Chek if the category id is set in the url
+    if(idParameter) {
         
-        // categoryName.innerHTML = apiResponse.name;
+        let catApiURL = "https://rosander.no/rainydays-backend/wp-json/wc/v3/products/?category=" + idParameter + "&consumer_key=" + apiKey + "&consumer_secret=" + apiSecret;
+        let productCard = document.getElementById("cat-products");
+        // let categoryName = document.getElementById("cat-name");
 
-        for (let i = 0; i < apiResponse.length; i++) {
-            productCard.innerHTML += `<section class="product-card-detailed">
+        try {
+            const response = await fetch(catApiURL);
+            const data = await response.json();
+            const apiResponse = data;
+            
+            // categoryName.innerHTML = apiResponse.name;
 
-            <a href="./productdetails.html?id=${apiResponse[i].id}"><img class="pl-img" alt="${apiResponse[i].images[0].alt}" src="${apiResponse[i].images[0].src}"></a>
-            <div class="pcd-center">
-                <div class="pcd-title"><a href="./productdetails.html?id=${apiResponse[i].id}" class="clear-link"><h3 class="text-dark text-narrow">${apiResponse[i].name}</h3></a>
-                    <h3 class="text-dark text-narrow">Price: ${apiResponse[i].price},-</h3>
-                </div>
+            for (let i = 0; i < apiResponse.length; i++) {
+                productCard.innerHTML += `<section class="product-card-detailed">
 
-                <div class="pcd-row">
-                    <span class="pcd-row-btn">
-                        <p class="text-dark"><span class="material-icons text-dark">favorite_border</span> Favorite</p>
+                <a href="./productdetails.html?id=${apiResponse[i].id}"><img class="pl-img" alt="${apiResponse[i].images[0].alt}" src="${apiResponse[i].images[0].src}"></a>
+                <div class="pcd-center">
+                    <div class="pcd-title"><a href="./productdetails.html?id=${apiResponse[i].id}" class="clear-link"><h3 class="text-dark text-narrow">${apiResponse[i].name}</h3></a>
+                        <h3 class="text-dark text-narrow">Price: ${apiResponse[i].price},-</h3>
+                    </div>
+
+                    <div class="pcd-row">
+                        <span class="pcd-row-btn">
+                            <p class="text-dark"><span class="material-icons text-dark">favorite_border</span> Favorite</p>
+                        </span>
+                        <span class="pcd-row-btn">
+                            <p class="text-dark"><span class="material-icons text-dark">sync_alt</span> Compare</p>
+                        </span>
+
+                        <div class="star-container">
+                            <span class="material-icons">star</span>                        
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>                           
+                            <span class="material-icons">star</span>                  
+                            <span class="material-icons">star</span>
+                        </div>
+                    </div>
+
+                    <span class="text-dark">${apiResponse[i].short_description}
                     </span>
-                    <span class="pcd-row-btn">
-                        <p class="text-dark"><span class="material-icons text-dark">sync_alt</span> Compare</p>
-                    </span>
 
-                    <div class="star-container">
-                        <span class="material-icons">star</span>                        
-                        <span class="material-icons">star</span>
-                        <span class="material-icons">star</span>                           
-                        <span class="material-icons">star</span>                  
-                        <span class="material-icons">star</span>
+                    <div class="pcd-bottom">
+                        <a href="./productdetails.html?id=${apiResponse[i].id}" class="button">Details</a>
+                        <a href="./shoppingcart.html?id=${apiResponse[i].id}" class="button">Add to cart</a>
                     </div>
                 </div>
+            </section>`;
+            }
 
-                <span class="text-dark">${apiResponse[i].short_description}
-                </span>
-
-                <div class="pcd-bottom">
-                    <a href="./productdetails.html?id=${apiResponse[i].id}" class="button">Details</a>
-                    <a href="./shoppingcart.html?id=${apiResponse[i].id}" class="button">Add to cart</a>
-                </div>
-            </div>
-        </section>`;
+        } catch (error) {
+            productCard.innerHTML = "Sorry, an error occurred!";
         }
-
-    } catch (error) {
-        productCard.innerHTML = "Sorry, an error occurred!";
+    } else {
+        window.location.href="./index.html";
     }
 
 }
