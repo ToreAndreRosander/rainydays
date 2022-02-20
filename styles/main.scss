@@ -75,6 +75,11 @@ p {
     margin-block-end: 0.5rem;
 }
 
+/* star container styling */
+.star-container {
+    margin: 0.5rem;
+}
+
 /* Re-usable text styling */ 
 
 .clear-link {
@@ -482,10 +487,6 @@ p {
     transform: scale(1.05);
 }
 
-.product-card:hover img {
-    transition: 0.9s;
-    transform: rotateY(15deg);
-}
 
 
 /* Buttons */
@@ -549,7 +550,7 @@ p {
     min-height: 50px;
     background-color: var(--extra-color-2);
     color: var(--text-color-darker);
-    margin: 1rem;
+    margin: 1rem auto;
     cursor: pointer;
     border: 0;
    
