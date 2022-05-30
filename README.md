@@ -1,4 +1,4 @@
-Rainydays webshop
+# Rainydays webshop
 
 ![image](https://rosander.no/rainydays/images/rainydays-frontpage.jpg)
 
@@ -9,6 +9,10 @@ A webshop for hiking and mountain gear.
 A modern and dark themed webshop for the hiking and outdoors clothing brand Rainydays.
 
 - List of featured posts
+
+## Design manual
+
+![image](https://rosander.no/rainydays/images/rainydays-style-tile.jpg)
 
 ## Built With
 
@@ -33,8 +37,6 @@ Upload files to a webserver and browse to your URL (eg. http://localhost/rainyda
 ## Contributing
 
 ## Contact
-
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
 
 [Twitter](www.twitter.com)
 
