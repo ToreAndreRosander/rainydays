@@ -7,8 +7,10 @@ A webshop for hiking and mountain gear.
 ## Description
 
 A modern and dark themed webshop for the hiking and outdoors clothing brand Rainydays.
+The Rainydays frontend use the Wordpress REST API to fetch products from the wordpress/woocommerce backend.
 
 - List of featured posts
+- Fetch products from Wordpress backend
 
 ## Design manual
 
@@ -16,7 +18,7 @@ A modern and dark themed webshop for the hiking and outdoors clothing brand Rain
 
 ## Built With
 
-- HTML 5
+- HTML5
 - CSS3
 - Javascript
 
@@ -34,12 +36,11 @@ git clone git@github.com:toreandre/rainydays.git
 
 Upload files to a webserver and browse to your URL (eg. http://localhost/rainydays/).
 
-## Contributing
 
 ## Contact
 
-[Twitter](www.twitter.com)
+[Twitter](https://twitter.com/RosanderTore)
 
 [E-mail](mailto:tore@rosander.no)
 
-[LinkedIn](www.linkedin.com)
+[LinkedIn](https://www.linkedin.com/in/tore-andre-rosander-141019b9/)
